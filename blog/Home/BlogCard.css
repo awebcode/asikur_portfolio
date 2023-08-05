@@ -1,0 +1,175 @@
+.card-main-link:hover{
+color: inherit;
+}
+.blog-card{
+   display: flex;
+  
+  
+   box-shadow: var(--box-shadow);
+   border-radius: 10px;
+   width: 70vw;
+   height: fit-content;
+   padding: 20px;
+   margin: 20px;
+   margin-left: 100px;
+   animation: box-border3 8s linear infinite;
+     
+}
+.blog-card:nth-child(odd){
+     animation: box-border4 5s linear infinite;
+}
+.blog-card .blog-img{
+   
+    height: 250px;
+    width: 240px;
+}
+.blog-img img{
+    animation: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-content{
+    flex: 80%;
+}
+.blog-content span:first-child{
+    font-size: 10px;
+}
+.blog-content h3{
+    font-size: 22px;
+    font-family: "Josefin Sans";
+    font-weight: 500;
+}
+.blog-content p{
+    display: flex;
+align-items: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5em;
+font-family: "Josefin Sans";
+}
+.blog-content p{
+    padding: 5px 4px;
+}
+.blog-content p img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: none;
+    margin: 5px;
+}
+.blog-content p svg{
+    padding: 3px;
+}
+.blog-content p span{
+    padding: 0px 5px;
+}
+.blog-card p span .name{
+font-size: 18px;
+font-family: "Josefin Sans";
+font-weight: 400;
+}
+.blog-card p span .name-title{
+    font-size: 12px;
+    color: #6b6666;
+    font-weight: 400;
+    font-family:monospace;
+}
+@media(max-width:880px){
+    .blog-card{
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       margin: 10px;
+       padding: 10px;
+       position: relative;
+       width: 80vw;
+    }
+   .blog-container{
+    margin: 0;
+    padding: 0;
+   }
+ .blog-card .blog-img{
+    
+    flex: 100%;
+    align-items: center;
+    height: 210px;
+    width: 90%;
+    padding: 5px;
+ }
+ .blog-content{
+   flex: 100%;
+ }
+ .blog-card .blog-img img{
+    width: 100%;height: 100%;
+ }
+ .blog-content h3{
+    font-size: 16px;
+ }
+ .blog-content p {
+font-size: 10px;
+ }
+}
+.blog-card-ed-del-btn{
+   flex: 100%;
+   float: right;
+   margin-top: -50px;
+  
+   display: block;
+}
+
+.blog-card-ed-del-btn button{
+    background-color: transparent;
+    padding: 5px 10px;
+    color: crimson;
+}
+.blog-card-ed-del-btn button:hover{
+    color: red;
+}
+@media(max-width:768px){
+      .blog-card-ed-del-btn{
+        margin-top: -25px;
+      }
+    .blog-card-ed-del-btn button{
+        padding: 0px 2px;
+    }
+    .blog-card-ed-del-btn a{
+    padding: 0px;
+    margin: 0px;
+}
+.blog-card-ed-del-btn a svg {
+font-size: 10px !important;
+padding: 0;
+}
+.blog-card-ed-del-btn button svg {
+font-size: 10px !important;
+padding: 0;
+}
+.blog-card-social svg{
+    font-size: 16px;
+}
+}
+/* Share Modal component */
+.share-modal{
+    height:fit-content;
+    width: auto;
+    padding: 40px 20px;
+    background-color: #010f1bb0;
+    z-index: 50000;
+    position: relative;
+    top: -10%;
+    left: 30%;
+    transform: translate(-35%,-50%);
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.share-modal .conatainer-x div{
+    display: flex;
+    
+}
+.share-modal .conatainer-x .close{
+    position: absolute;
+    right: 10px;
+  
+}

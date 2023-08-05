@@ -1,0 +1,148 @@
+.common {
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+}
+.common-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+.common-content {
+  flex: 62%;
+}
+.common-img {
+  flex: 38%;
+  height: 100%;
+  width: 100%;
+  margin-top: -50px;
+  animation: animate 3s linear infinite;
+}
+.common-img img {
+  width: 50%;
+  height: 60%;
+  /* border-radius: 500px; */
+  /* border: 5px solid var(--main-color); */
+  margin-left: 150px;
+  animation: borer 5s linear infinite;
+}
+.type-title-1 {
+  color: var(--txt-color);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Josefin Sans";
+}
+.common-title-name {
+  font-size: 3.3em;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@keyframes border-rotate {
+  0% {
+    /* border-color: var(--main-color); */
+    background-color: crimson;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    /* border-color: var(--main-color); */
+    background-color: dodgerblue;
+    transform: rotate(360deg);
+  }
+}
+@keyframes borer {
+  /* 0%{
+    border-radius: 700px 300px 400px 700px /700px 200px 400px 700px;
+   }
+   50%{
+    border-radius: 200px 800px 300px 500px /200px 800px 500px 800px;
+   }
+    100%{
+    border-radius: 100px 400px 800px 300px /200px 800px 300px 500px;
+   } */
+  0% {
+    border-radius: 80% 30% 40% 70% /60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% /60% 20% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .common {
+    height: 100%;
+  }
+  .common-content {
+    flex: 100%;
+  }
+
+  .common-img {
+    margin-top: 50px;
+    flex: 100%;
+    height: 440px;
+  }
+}
+.type-w-1 {
+  font-size: 35px;
+  color: var(--txt-color);
+}
+.type-w {
+  color: var(--main-color);
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Josefin Sans";
+}
+.Typewriter {
+  display: inline;
+}
+/* .Typewriter__wrapper{
+    color:red;
+} */
+.Typewriter__cursor {
+  color: lightseagreen;
+}
+@media (max-width: 768px) {
+  .common-content {
+    flex: 100%;
+  }
+  .common-img {
+    flex: 100%;
+    height: 50%;
+    width: 100%;
+  }
+  .common-img img {
+    margin-left: 0px;
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .type-w-1,
+  .type-w {
+    font-size: 26px;
+    letter-spacing: 1;
+  }
+  .type-title-1 {
+    color: var(--txt-color);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: monospace;
+  }
+  .common-title-name {
+    font-size: 2.8em;
+    font-family: "Josefin Sans";
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  .title-3 {
+    font-size: 1.1em;
+  }
+}

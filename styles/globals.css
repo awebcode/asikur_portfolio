@@ -1,0 +1,187 @@
+@import url("../common/common.css");
+@import url("../components/Navbar/navbar.module.css");
+@import url("../components/Navbar/thememenu.module.css");
+@import url("../components/About/about.css");
+@import url("../components/Blogs/blog.css");
+@import url("../components/Experience/experience.css");
+@import url("../components/portfolio/portfolio.css");
+@import url("../components/portfolio/portfoliocard.css");
+@import url("../components/pagination/pagination.css");
+@import url("../components/pricing/price.css");
+@import url("../css/index.css");
+@import url("../css/theme.css");
+@import url("../components/Loading/loading.css");
+@import url("../components/account/account.css");
+@import url("../components/footer/footer.css");
+@import url("./main.css");
+/* portfolio */
+@import url("../portfolio/Navbar/navbar.css");
+@import url("../portfolio/Navbar/thememenu.css");
+@import url("../portfolio/contact/contact.css");
+
+@import url("../portfolio/About/about.css");
+@import url("../portfolio/Experience/experience.css");
+@import url("../portfolio/offer/offer.css");
+@import url("../portfolio/testimonial/testimoni.css");
+@import url("../portfolio/Portfolio/portfolio.css");
+/* Blog */
+@import url("../blog/blog.css");
+@import url("../blog/blogDetails/details.css");
+@import url("../blog/category/category.css");
+@import url("../blog/comments/comments.css");
+@import url("../blog/dashboard/dashboard.css");
+@import url("../blog/dashboard/settings.css");
+@import url("../blog/footer/footer.css");
+@import url("../blog/Home/BlogCard.css");
+@import url("../blog/Navbar/navbar.css");
+@import url("../blog/Navbar/thememenu.css");
+@import url("../blog/sidebar/sidebar.css");
+@import url("../blog/sidebar/closeFriend.css");
+@import url("../blog/sideright/sider.css");
+@import url("../blog/topbar/topbar.css");
+/* pages */
+@import url("../pages/user/profile/intro/style.css");
+@import url("../pages/user/friendship/friendship.css");
+.single-chat-box
+/* create by 9hour nextecom */
+.img-up .file_img {
+  position: relative;
+  width: 25%;
+  height: 100px;
+  cursor: pointer;
+}
+.img-up .file_img:nth-of-type(1) {
+  width: 100%;
+  height: 400px;
+}
+.img-up .file_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.img-up .file_img span {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 4;
+  background: white;
+  color: crimson;
+  padding: 3px 7px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bolder;
+  border: 1px solid crimson;
+}
+::-webkit-file-upload-button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--main-color);
+}
+::-webkit-scrollbar{
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(180, 179, 187, 0.26);
+  border-top-right-radius: 300px;
+   border-top-left-radius: 300px;
+    border-bottom-right-radius: 250px;
+   border-bottom-left-radius: 250px;
+}
+
+/* Messages Page Style */
+/* .messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+} */
+/* .chakra-image{
+  animation: none;
+} */
+
+.chakra-avatar img,.chakra-image{
+  animation: none;
+}
+.chat-main-box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;width: 100%;
+  padding: 10px;
+  background-color: var(--main-bg);
+}
+.startchattingpage{
+  display: flex;
+  justify-content: center;align-items: center;height: 100%;
+  padding: 5px;border-radius: 10px;
+}
+.chat-font{
+  font-size: 30px;
+}
+.MuiBadge-root svg{
+  color: white;
+}
+.mychats-none{
+  height: 100vh !important;
+  overflow-y: scroll;
+}
+.single-chat-box{
+  height: 100vh !important;
+  overflow-y: scroll;
+}
+.mychats,.mychats-box{
+  background-color: var(--main-bg);
+}
+.single-chat-box{
+  /* width: 100%;
+  height: 100%;   */
+  
+  background-color: var(--main-bg);
+}
+.single-chat-box input{
+  color: var(--txt-color);
+  background-color: var(--main-bg);
+  border: 2px solid var(--main-color);
+}
+.single-chat-box input::placeholder{
+  color: var(--txt-color);
+}
+.single-chat-box .sentdbtn{
+color: var(--txt-color);
+
+}
+.single-chat-box .sentdbtn:hover{
+color: var(--main-color);
+
+}
+/* .single-chat-box input:focus{
+background-color: inherit;
+} */
+/* Bell Icon Messages */
+
+@media(max-width:768px){
+  .mychats-box{
+    width: 100%;
+  }
+  .mychats{
+    display: flex !important;
+   
+  }
+  .mychats-none{
+    display: none !important;
+   
+  }
+  .startchattingpage{
+    display: none;
+  }
+  .chat-font{
+  display: none;
+}
+}
+/*Pages Account modal tab button */
+.MuiTabs-root .MuiButtonBase-root {
+  color: var(--txt-color);
+}

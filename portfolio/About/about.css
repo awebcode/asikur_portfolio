@@ -1,0 +1,236 @@
+.about {
+    height: 100%;
+    width: 100%;
+   padding: 100px 0px;
+  background-color: var(--main-bg);
+  color: var(--txt-color);
+  position: relative;
+}
+.main-title-about{
+    font-size: 10rem;
+    font-weight: 600 !important;
+   
+}
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-content-port{
+    flex: 40%;
+    padding: 50px 20px ;
+    margin-top: 300px;
+}
+.about-img-port{
+    flex: 40%;
+    height: 480px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    margin-top: -60px;
+}
+.about-content-port .warn{
+    background-color: rgba(191, 204, 9, 0.308);
+    color: darkgray;
+}
+.about-content-port ul span{
+    color: darkgray;
+}
+.about-content-port ul li{
+    list-style-type: square;
+    margin-left: 20px;
+    font-weight: 300;
+}
+.about-img-port img{
+    height: 100%;
+    width: 100%;
+}
+.about-completed-sec{
+    position: absolute;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.about-completed{
+    flex: 10%;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin: 5px;
+    height: fit-content;
+    width: fit-content;
+    animation: anim 2s linear infinite;
+     animation: box-border3 8s linear infinite;
+     
+}
+.about-completed:nth-child(odd){
+    animation: box-border4 6s linear infinite;
+}
+@keyframes box-border3{
+    0%{
+        
+        box-shadow: 1px 1px 5px var(--main-color);
+          
+    }
+    10%{
+        
+        box-shadow: 1px 1px 5px rgb(219, 223, 219);
+          
+    }
+     20%{
+         box-shadow: 1px 1px 5px rgb(214, 9, 146);
+        
+    }
+     30%{
+        
+        box-shadow: 1px 1px 5px rgb(10, 221, 168);
+          
+    }
+     35%{
+        
+        box-shadow: 1px 1px 5px #e11d48;
+          
+    }
+
+     40%{
+         box-shadow: 1px 1px 5px #f1b308ea;
+        
+    }
+    50%{
+         box-shadow: 1px 1px 5px deepskyblue;
+        
+    }
+    55%{
+         box-shadow: 1px 1px 5px #a855f7;
+        
+    }
+     60%{
+        
+        box-shadow: 1px 1px 5px rgb(85, 1, 110);
+          
+    }
+    
+      70%{
+         box-shadow: 1px 1px 5px rgb(196, 193, 13);
+        
+    }
+   
+    80%{
+         box-shadow: 1px 1px 5px #3c0496;
+        
+    }
+     90%{
+         box-shadow: 1px 1px 5px #ef4444;
+        
+    }
+    95%{
+         box-shadow: 1px 1px 5px #1d4ed8;
+        
+    }
+      100%{
+         box-shadow: 1px 1px 5px #2aa047;
+        
+    }
+}
+@keyframes box-border4{
+    0%{
+        
+        box-shadow: 1px 1px 5px var(--main-color);
+          
+    }
+    10%{
+        
+        box-shadow: 1px 1px 5px rgb(219, 223, 219);
+          
+    }
+     20%{
+         box-shadow: 1px 1px 5px rgb(214, 9, 146);
+        
+    }
+     30%{
+        
+        box-shadow: 1px 1px 5px rgb(10, 221, 168);
+          
+    }
+     35%{
+        
+        box-shadow: 1px 1px 5px #e11d48;
+          
+    }
+
+     40%{
+         box-shadow: 1px 1px 5px #f1b308ea;
+        
+    }
+    50%{
+         box-shadow: 1px 1px 5px deepskyblue;
+        
+    }
+    55%{
+         box-shadow: 1px 1px 5px #a855f7;
+        
+    }
+     60%{
+        
+        box-shadow: 1px 1px 5px rgb(85, 1, 110);
+          
+    }
+    
+      70%{
+         box-shadow: 1px 1px 5px rgb(196, 193, 13);
+        
+    }
+   
+    80%{
+         box-shadow: 1px 1px 5px #3c0496;
+        
+    }
+     90%{
+         box-shadow: 1px 1px 5px #ef4444;
+        
+    }
+    95%{
+         box-shadow: 1px 1px 5px #1d4ed8;
+        
+    }
+      100%{
+         box-shadow: 1px 1px 5px #2aa047;
+        
+    }
+}
+@keyframes anim{
+    0%{
+        transform: translateY(0%);
+    }
+     50%{
+        transform: translateY(10px);
+    }
+     100%{
+        transform: translateY(0%);
+    }
+}
+.about-completed h1{
+    font-size: 20px;
+}
+@media(max-width:767px){
+    .about{
+        /* margin-top: 10px; */
+        padding: 10px 0px;
+    }
+    .main-title-about{
+    font-size: 4em;
+    
+}
+.about-content,.about-img-port{
+    flex: 100%;
+}
+.about-img-port{
+    margin-top:0px;
+}
+.about-content-port{
+    margin-top: 250px;
+}
+}

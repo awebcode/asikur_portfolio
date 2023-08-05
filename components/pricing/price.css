@@ -1,0 +1,294 @@
+.pricing{
+  background-color: var(--main-bg);
+}
+.pricing .container{
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.pricing .container .wrapper{
+  /* flex: 13%; */
+  width: 300px;
+  background: var(--main-bg) !important; /*#111827*/
+  border-radius: 16px;
+  padding:0px 4px;
+  /* box-shadow:  var(--box-shadow) !important; */
+  margin: 10px 15px;
+  color: var(--txt-color) !important;
+  animation: box-border3 7s linear infinite !important;
+ 
+}
+.pricing:nth-child(2){
+height: 300px;
+}
+
+.pricing .container .wrapper:nth-child(odd){
+   animation: box-border4 6s linear infinite !important;
+}
+.pricing .container .wrapper .name{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 16px;
+    color: var(--txt-color);
+}
+.pricing .wrapper header{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  position: relative;
+  
+}
+.pricing header label{
+  height: 100%;
+  z-index: 2;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.pricing #tab-1:checked ~ header .tab-1,
+.pricing #tab-2:checked ~ header .tab-2,
+.pricing #tab-3:checked ~ header .tab-3{
+  color: #fff;
+}
+.pricing .active{
+    color: var(--txt-color);
+   font-weight: 900;
+   font-size: 18px;
+
+}
+.pricing header label:nth-child(2){
+  width: 40%;
+}
+ .pricing header .slider{
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: all 0.3s ease;
+}
+.pricing #tab-1:checked ~ header .slider{
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+}
+ .pricing #tab-2:checked ~ header .slider{
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+.pricing #tab-3:checked ~ header .slider{
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+}
+
+/* tab -2 start*/
+ #tab-2-1:checked ~ header .tab-1,
+ #tab-2-2:checked ~ header .tab-2,
+ #tab-2-3:checked ~ header .tab-3{
+  color: #fff;
+}
+.pricing .active{
+    color: var(--txt-color);
+   font-weight: 900;
+   font-size: 18px;
+
+}
+.pricing header label:nth-child(2){
+  width: 40%;
+}
+ .pricing header .slider{
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: all 0.3s ease;
+}
+ #tab-2-1:checked ~ header .slider{
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+}
+  #tab-2-2:checked ~ header .slider{
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+ #tab-2-3:checked ~ header .slider{
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+ 
+}
+ #tab-2-1:checked ~ .card-area .cards .row-2-1{
+   margin-left: 0%;
+}
+ #tab-2-2:checked ~ .card-area .cards .row-2-1{
+  margin-left: -33.4%;
+}
+ #tab-2-3:checked ~ .card-area .cards .row-2-1{
+   margin-left: -66.8%;
+}
+/*tab 2 end  */
+/* tab -3 start*/
+ #tab-3-1:checked ~ header .tab-1,
+ #tab-3-2:checked ~ header .tab-2,
+ #tab-3-3:checked ~ header .tab-3{
+  color: #fff;
+}
+.pricing .wrapper .active{
+    color: var(--txt-color);
+   font-weight: 900;
+   font-size: 18px;
+
+}
+.pricing header label:nth-child(2){
+  width: 40%;
+}
+ .pricing header .slider{
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: all 0.3s ease;
+}
+ #tab-3-1:checked ~ header .slider{
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+}
+  #tab-3-2:checked ~ header .slider{
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+ #tab-3-3:checked ~ header .slider{
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+}
+ #tab-3-1:checked ~ .card-area .cards .row-3-1{
+   margin-left: 0%;
+}
+ #tab-3-2:checked ~ .card-area .cards .row-3-1{
+  margin-left: -33.4%;
+}
+ #tab-3-3:checked ~ .card-area .cards .row-3-1{
+   margin-left: -66.8%;
+}
+/*tab 3 end  */
+
+
+.pricing .pricing .wrapper input[type="radio"]{
+  display: none;
+}
+.pricing .card-area{
+  overflow: hidden;
+}
+.pricing .card-area .cards{
+  display: flex;
+  width: 300%;
+}
+.pricing .cards .row{
+  width: 33.4%;
+}
+.pricing .cards .row-1{
+  transition: all 0.3s ease;
+}
+ .pricing #tab-1:checked ~ .card-area .cards .row-1{
+   margin-left: 0%;
+}
+.pricing #tab-2:checked ~ .card-area .cards .row-1{
+  margin-left: -33.4%;
+}
+.pricing #tab-3:checked ~ .card-area .cards .row-1{
+   margin-left: -66.8%;
+}
+.pricing .row .price-details{
+  margin: 20px 0;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+}
+ .pricing .price-details .price{
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+}
+.pricing .price-details .price::before,
+.pricing .price-details .price::after{
+  position: absolute;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.pricing .price-details .price::before{
+  content: "$";
+  left: -13px;
+  top: 17px;
+  font-size: 20px;
+}
+.pricing .price-details .price::after{
+  content: "/completed";
+  right: -73px;
+  bottom: 17px;
+  font-size: 13px;
+}
+ .pricing .price-details p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+.pricing .row .features li{
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.pricing.features li i{
+  background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.pricing .features li span{
+  margin-left: 10px;
+  color: var(--txt-color);
+}
+  .pricing .wrapper button{
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+ 
+   color: var(--txt-color);
+  cursor: pointer;
+  margin-bottom: 20px;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: auto;
+   margin: 8px;
+   margin-left: 0px;
+}
+.pricing .wrapper button:hover{
+  transform: scale(0.98);
+}
+@media(max-width:768px){
+  
+    .pricing .wrapper{
+        flex: 100%;
+    }
+}

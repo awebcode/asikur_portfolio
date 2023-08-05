@@ -1,0 +1,10 @@
+.main {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+.main input{
+  width: 200px;
+  height: 100px;
+}
