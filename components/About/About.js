@@ -56,11 +56,18 @@ const skills = [
     return {
       whileHover: { scale: 1.1 },
       whileTap: { scale: 1.2 },
-      initial: { opacity: 0, scale: 0, x: 500 }, // Adjust initial values
+      initial: {
+        opacity: 0,
+        scale: 0,
+        // y: btn ? 50 : 0, // Apply y: 50 if btn is true, otherwise y: 0
+        y: 20, // Apply y: 50 if btn is true, otherwise y: 0
+        x: 20, // Apply x: 0 if btn is true, otherwise x: 500
+      },
       whileInView: {
         opacity: 1,
         scale: 1,
-        x: 0,
+        y: btn ? 40 : 0,
+        x: btn ? 0 : 100,
         transition: {
           delay, // Use the calculated delay
           duration: 0.5, // Added duration for whileInView transition
@@ -77,24 +84,7 @@ const skills = [
       },
     };
   };
-    const getMobileAnimationStyles = (index) => {
-      const delay = 0.1 * index;
-
-      return {
-        animate: {
-          opacity: 1,
-          scale: 1,
-          x: 0,
-          transition: {
-            delay,
-            duration: 0.5,
-            type: "spring",
-            stiffness: 200,
-            damping: 10,
-          },
-        },
-      };
-    };
+    
   return (
     <>
       {/* <Head>

@@ -63,4 +63,9 @@ color: var(--main-bg);
   align-items: center;
   padding:0px 20px !important;
 }
+.skillX {
+ 
+  font-size: 12px;
+ 
+}
 }
