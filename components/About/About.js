@@ -265,9 +265,9 @@ const skills = [
           <motion.div
             key={index}
             className="skillX"
-            {...(btn
-              ? getMobileAnimationStyles(index)
-              : getDesktopAnimationStyles(index))}
+           
+              
+            {...getDesktopAnimationStyles(index)}
           >
             {skill}
           </motion.div>
