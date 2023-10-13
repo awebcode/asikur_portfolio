@@ -14,6 +14,7 @@
 }
 .ports-main .port-main .port-box{
     flex: 30% !important;
+    
     width: 420px; /*after add tilt effect 365px is good*/ 
     margin: 14px 14px;
     background-color:var(--main-bg);
@@ -24,6 +25,9 @@
   
     animation: box-border3 7s linear infinite;
    
+}
+.ports-main .port-main .port-img img{
+animation: none !important;
 }
 .ports-main .port-main .port-box:nth-child(odd){
     flex: 30%;
@@ -297,9 +301,7 @@
         
     }
 }
-.ports-main .port-main .port-box .port-img{
-    height: 240px;width:100%;
-}
+
 .ports-main .port-main .port-box .port-img img{
     height: 100%;
     width: 100%;
@@ -327,25 +329,44 @@ color: var(--txt-color);
 font-weight: 200;
 font-size: 13px !important;
 }
-.see_all_projects{
-    margin-left: 140px; /*for add tilt and 2 col*/ 
-    padding: 20px 10px !important;
-    text-align: center !important;
-    color: var(--main-color);
-   
-  
-  
-  
+@keyframes changeColor {
+  0% {
+    color: blueviolet;
+  }
+  20% {
+    color: #64748b;
+  }
+  40% {
+    color: #84cc16;
+  }
+  60% {
+    color: orange;
+  }
+  80% {
+    color: #e11d48;
+  }
+  100% {
+    color: #fbbf24;
+  }
 }
+
+.see_all_projects {
+  text-align: center !important;
+  font-size: 40px;
+  padding: 30px !important;
+  margin-left: 140px; /* for add tilt and 2 col */
+  animation: changeColor 6s infinite;
+}
+
+
 @media(max-width:768px){
-    .ports-main .port-main .port-box .port-img{
-    height: 200px;width:100%;
-}
+   
     .ports-main .port-main .port-box{
         flex: 100%;
         width: 90%;
     }
     .see_all_projects{
     margin-left: 0px;
+     font-size: 24px;
     }
 }

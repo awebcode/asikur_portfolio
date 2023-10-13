@@ -4,6 +4,8 @@ import { clearHistoryAction, loadUser, register } from "../../actions/userAction
 import { useDispatch, useSelector } from "react-redux"
 import { toast } from "react-toastify"
 
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import IconButton from "@mui/material/IconButton";
 import { CLEAR_ERRORS } from "../../constants/userConstants";
 import { useRouteLoaderData } from "react-router-dom";
 import { useRouter } from "next/router";
@@ -38,7 +40,8 @@ const [loading, setLoading] = useState(false);
      const { name, value } = e.target;
      setUser({ ...user, [name]: value });
      dispatch({ type: "NOTIFY", payload: {} });
-   };
+  };
+  
  
   const handleUploadInput = (e) => {
    if(e.target.files[0].size > 1024 * 1024)return toast.warning("File Size Bigger Than 1mb,Plese Upload Small File Less Than 1 MB")
@@ -130,7 +133,9 @@ const [loading, setLoading] = useState(false);
     const x = e.clientX - rect.left;
     btnRef.current.style.setProperty("--x", x + "deg");
   };
-  
+   const handleUploadClick = () => {
+    //  document.getElementById("upload-input").click();
+   };
   return (
     <div className="contact" id="contact">
       <div className="container-under-contact">
@@ -149,7 +154,7 @@ const [loading, setLoading] = useState(false);
             }}
             whileHover={{ scaleX: 1.2 }}
           >
-            <span>Contact </span>Me.
+            <span>Sign</span> Up
           </motion.h1>
         </Tilt>
         <div className="contact-main">
@@ -157,11 +162,8 @@ const [loading, setLoading] = useState(false);
             <div class="contact-box">
               <div class="left"></div>
               <div class="right">
-                <h2>Contact Me</h2>
-                <p>
-                  Signup And Check Your Message Box To Contact Admin In Real time
-                  Messaging.
-                </p>
+                {/* <h2>Contact Me</h2> */}
+
                 <form onSubmit={registerSubmit}>
                   <input
                     type="text"
@@ -194,35 +196,75 @@ const [loading, setLoading] = useState(false);
                     />
                     <span
                       onClick={() => setShowPassword(!ShowPassword)}
-                      style={{ position: "absolute", right: "10px", top: "10px" }}
+                      style={{ position: "absolute", right: "10px", top: "40px" }}
                     >
                       {ShowPassword ? "hide" : "show"}
                     </span>
                   </div>
                   <input
                     type="file"
-                    class="field"
+                    id="upload-input"
                     name="avatar"
+                    style={{ display: "none" }}
                     onChange={handleUploadInput}
                   />
+                  <label htmlFor="upload-input">
+                    <IconButton
+                      component="h1"
+                      onClick={handleUploadClick}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        textAlign: "left",
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <CloudUploadIcon
+                        style={{ fontSize: 44, color: "yellow", marginBottom: "8px" }}
+                      />
+                      <span
+                        style={{ fontSize: "16px", fontWeight: "bold", color: "yellow" }}
+                      >
+                        Profile Photo
+                      </span>
+                    </IconButton>
+                  </label>
+
                   {avatarPreview && (
                     <img
                       src={avatarPreview}
                       alt=""
-                      style={{ height: "50px", width: "50px" }}
+                      style={{
+                        height: "70px",
+                        width: "80px",
+                        borderRadius: "50%",
+                        display: "block",
+
+                        animation: "none",
+                      }}
                     />
                   )}
                   <br />
-                  <label>
+                  <label
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      color: "white",
+                      margin: "8px 0px",
+                    }}
+                  >
                     <input
                       type="checkbox"
                       checked={rememberMe}
                       onChange={handleRememberMeChange}
+                      style={{ marginRight: "5px", cursor: "pointer" }}
                     />
-                    <span style={{ color: "tomato", padding: "0px 5px" }}>
+                    <span style={{ padding: "0px 5px", fontSize: "16px" }}>
                       Remember me
                     </span>
                   </label>
+
                   <p>
                     alreay have an account? <Link href="/login">login</Link>
                   </p>
@@ -231,19 +273,14 @@ const [loading, setLoading] = useState(false);
                       ref={btnRef}
                       className="btn common-btn"
                       type="submit"
-                      disabled={loading?true:false}
+                      disabled={loading ? true : false}
                     >
                       <i></i>
                       <i></i>
                       <a>Loading...</a>
                     </button>
                   ) : (
-                    <button
-                      ref={btnRef}
-                      className="btn common-btn"
-                      type="submit"
-                     
-                    >
+                    <button ref={btnRef} className="btn common-btn" type="submit">
                       <i></i>
                       <i></i>
                       <a>Signup</a>

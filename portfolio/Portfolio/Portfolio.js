@@ -19,7 +19,7 @@ const Portfolio = () => {
   };
   
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(6);
+  const [postsPerPage, setPostsPerPage] = useState(12);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = data.slice(firstPostIndex, lastPostIndex);
@@ -193,7 +193,7 @@ const Portfolio = () => {
                 return (
                   <>
                     {/* {btn ? ( */}
-                    <Tilt>
+                    <Tilt key={index}>
                       {" "}
                       <div className="port-box">
                         <div className="port-img">

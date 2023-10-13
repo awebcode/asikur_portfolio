@@ -87,7 +87,50 @@ const Experience = () => {
        setBtn(true);
      }
    }, [btn,setBtn]);
- 
+   const skills = [
+     "Junior Web Developer at ABC Tech",
+     "Intern Frontend Developer at XYZ Agency",
+     "Web Developer Trainee at WebDev Academy",
+     "Freelance Website Designer",
+     "Assistant UI/UX Designer at DesignCo",
+     "Junior Full-Stack Developer at Tech Solutions Inc.",
+     "Junior Software Engineer at Software Innovators",
+     "Web Development Intern at CodeIt Bootcamp",
+     "Junior Backend Developer at DevTeamX",
+     "Junior UI/UX Designer at Creative Studios",
+     "Intern JavaScript Developer at CodeMasters",
+     "Junior Frontend Developer at WebXpress",
+     "Junior Mobile App Developer at AppWorks",
+     "Software Development Trainee at TechGenius",
+     "UI/UX Design Intern at UXify Labs",
+   ];
+ const getAnimationStyles = (index) => {
+   const delay = 0.1 * index; // Adjust the delay based on the index
+
+   return {
+     whileHover: { scale: 1.1 },
+     whileTap: { scale: 1.2 },
+     initial: { opacity: 0, scale: 0, x: 500 }, // Adjust initial values
+     whileInView: {
+       opacity: 1,
+       scale: 1,
+       x: 0,
+       transition: {
+         delay, // Use the calculated delay
+         duration: 0.5, // Added duration for whileInView transition
+         type: "spring", // Added spring animation
+         stiffness: 200, // Adjust spring stiffness
+         damping: 10, // Adjust spring damping
+       },
+     },
+     transition: {
+       duration: 0.5, // Adjust duration for initial and whileTap transitions
+       type: "spring", // Added spring animation
+       stiffness: 200, // Adjust spring stiffness
+       damping: 10, // Adjust spring damping
+     },
+   };
+ };
   return (
     <>
       <motion.div className="experience-1" variants={textVariant()}>
@@ -127,7 +170,13 @@ const Experience = () => {
           </motion.h1>
         </Tilt>
       </motion.div>
-
+      <div className="skills-container">
+        {skills.map((skill, index) => (
+          <motion.div key={index} className="skillX" {...getAnimationStyles(index)}>
+            {skill}
+          </motion.div>
+        ))}
+      </div>
       <div
         className="experience mt-20 flex flex-col"
         style={{ display: "flex", flexDirection: "column" }}

@@ -31,6 +31,8 @@ const Index = () => {
                           alt=""
                           height={1000}
                           width={1000}
+                          objectFit="cover"
+                          
                         />
                       </Link>
                     </div>
