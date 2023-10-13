@@ -50,7 +50,7 @@ const skills = [
   "Vps",
   // Add more skills as needed
 ];
-  const getAnimationStyles = (index) => {
+  const getDesktopAnimationStyles = (index) => {
     const delay = 0.1 * index; // Adjust the delay based on the index
 
     return {
@@ -77,6 +77,24 @@ const skills = [
       },
     };
   };
+    const getMobileAnimationStyles = (index) => {
+      const delay = 0.1 * index;
+
+      return {
+        animate: {
+          opacity: 1,
+          scale: 1,
+          x: 0,
+          transition: {
+            delay,
+            duration: 0.5,
+            type: "spring",
+            stiffness: 200,
+            damping: 10,
+          },
+        },
+      };
+    };
   return (
     <>
       {/* <Head>
@@ -250,14 +268,16 @@ const skills = [
         }}
         whileHover={{ scaleX: 1.2 }}
       >
-        <span>Skills.</span>
+        <span>My Skills.</span>
       </motion.h1>
       <div className="skills-container">
         {skills.map((skill, index) => (
-          <motion.div key={index} className="skillX" {...getAnimationStyles(index)}
-          
-           
-          
+          <motion.div
+            key={index}
+            className="skillX"
+            {...(btn
+              ? getMobileAnimationStyles(index)
+              : getDesktopAnimationStyles(index))}
           >
             {skill}
           </motion.div>

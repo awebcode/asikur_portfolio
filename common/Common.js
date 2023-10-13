@@ -31,7 +31,6 @@ const Common = (props) => {
   }, [btn]);
   return (
     <>
-    
       {btn ? (
         <div className="common">
           <div className="container">
@@ -42,7 +41,7 @@ const Common = (props) => {
                   {props.title2} <span>{props.span2}</span>
                 </h3>
                 {props.type0 && (
-                  <h1>
+                  <h1 style={{ margin: "8px 0px" }}>
                     <span className="type-w">
                       <span className="type-w-1"> I'M A </span>
                       <span>
@@ -66,7 +65,7 @@ const Common = (props) => {
                   </h1>
                 )}
                 {props.ty && (
-                  <h1>
+                  <h1 style={{ margin: "8px 0px" }}>
                     <span className="type-w">
                       <span className="type-w-1"> Expert </span>{" "}
                       <span>
@@ -106,7 +105,7 @@ const Common = (props) => {
                   {/* <br /> */}
                   {props.span5}
                 </p>
-                <button type="" className="common-btn">
+                <button style={{margin:"20px 0px"}} type="" className="common-btn">
                   <i></i>
                   <i></i>
                   {props.btncv ? (

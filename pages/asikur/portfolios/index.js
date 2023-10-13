@@ -9,10 +9,11 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>All Works|Portfolio -Asikur Portfolio Website</title>
-        
-      
-       
+        <title>All Works | Asikur's Portfolio - Explore the Journey</title>
+        <meta
+          name="description"
+          content="Delve into Asikur's captivating portfolio and blog, revealing talent, expertise, and a journey in web development, design, coding, and technology. Engaging articles, projects, and insights await. Get to know the creative mind behind the website. Optimized for Googlebot indexing and ranking."
+        />
       </Head>
       <div className="container">
         <div className="ports-main">
@@ -32,7 +33,6 @@ const Index = () => {
                           height={1000}
                           width={1000}
                           objectFit="cover"
-                          
                         />
                       </Link>
                     </div>

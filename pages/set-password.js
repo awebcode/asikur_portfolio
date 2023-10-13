@@ -13,7 +13,7 @@ const setPassword = () => {
   return (
     <>
       <Head>
-        <title>Set/Password -Asikur Portfolio Website</title>
+        <title>Set | Password -Asikur Portfolio Website</title>
         <meta
           name="description"
           content="Set a new password on the Asikur Portfolio Website to enhance the security of your account. Follow the provided instructions to create a strong and unique password that safeguards your personal information. Designed for a seamless user experience and accessible to Google bot count, our set-password page ensures a smooth and secure process for updating your account credentials."

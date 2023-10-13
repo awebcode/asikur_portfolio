@@ -405,9 +405,11 @@ function FAQ() {
   return (
     <>
       <Head>
-        <title>Questions/Answers -Asikur Portfolio Website</title>
-        
-        
+        <title>FAQ | Questions | Answers - Asikur Portfolio Website</title>
+        <meta
+          name="description"
+          content="Explore the frequently asked questions and get answers on Asikur's captivating portfolio website. Find information on web development, design, coding, and technology. Gain insights into the creative mind behind the website. Optimized for easy navigation and user satisfaction."
+        />
       </Head>
       <div className={styles.faq}>
         <h2 className="main-title">Quick Questions</h2>

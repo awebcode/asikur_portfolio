@@ -34,8 +34,8 @@ const OfferCard = (props) => {
             whileInView={{ x: 0, y: 0, opacity: 1 }}
             // whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: props.i,
-              opacity: { duration: 1 },
+              delay: 0.1*props.i,
+              opacity: { duration: 0.6 },
               y: { type: "spring", stiffness: 60 },
               duration: 0.4,
               ease: "easeInOut",

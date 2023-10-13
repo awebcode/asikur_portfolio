@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
-        color: "#ccd6f6",
+        color: "#64748b",
       }}
       contentArrowStyle={{ borderRight: "9px solid  #232631" }}
       date={experience.date}
@@ -51,9 +51,9 @@ const ExperienceCard = ({ experience }) => {
         <div>
           <h3
             className="text-white text-[24px] font-bold"
-            style={{ color: "#ccd6f6", fontSize: "24px", fontWeight: "600" }}
+            style={{ color: "#64748b", fontSize: "24px", fontWeight: "600" }}
           >
-            {experience.title} <span>{experience.skill}</span>
+            <span> {experience.title}</span> <span>{experience.skill}</span>
             {experience.desc && <p>{experience.desc}</p>}
           </h3>
           {/* <p
@@ -69,7 +69,7 @@ const ExperienceCard = ({ experience }) => {
             <li
               key={`experience-point-${index}`}
               className="text-white-100 text-[14px] pl-1 tracking-wider"
-              style={{ color: "#ccd6f6", fontSize: "14px", paddingLeft: "13px" }}
+              style={{ color: "#64748b", fontSize: "14px", paddingLeft: "13px" }}
             >
               {point}
             </li>
@@ -133,11 +133,18 @@ const Experience = () => {
     return {
       whileHover: { scale: 1.1 },
       whileTap: { scale: 1.2 },
-      initial: { opacity: 0, scale: 0, x: 500 }, // Adjust initial values
+      initial: {
+        opacity: 0,
+        scale: 0,
+        // y: btn ? 50 : 0, // Apply y: 50 if btn is true, otherwise y: 0
+        y: 20, // Apply y: 50 if btn is true, otherwise y: 0
+        x: 20, // Apply x: 0 if btn is true, otherwise x: 500
+      },
       whileInView: {
         opacity: 1,
         scale: 1,
-        x: 0,
+        y: btn ? 40 : 0,
+        x: btn ? 0 : 100,
         transition: {
           delay, // Use the calculated delay
           duration: 0.5, // Added duration for whileInView transition

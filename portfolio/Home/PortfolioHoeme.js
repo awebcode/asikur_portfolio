@@ -47,7 +47,7 @@ const PortfolioHoeme = () => {
         stack
         developer.just send me a message to contact friendly."
         btntext="Download Cv"
-        btncv="/resume.docx"
+        btncv="/cv.pdf"
         img="/about3.png"
       />
       <About />

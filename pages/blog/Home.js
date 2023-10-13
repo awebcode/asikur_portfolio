@@ -34,7 +34,7 @@ const Home = () => {
     <>
       <Head>
         <title>
-          {user?.name ? user?.name + "'s " : "/Blogs"} -Asikur Portfolio Website
+          My Blogs -Asikur Portfolio Website
         </title>
         <meta
           name="description"

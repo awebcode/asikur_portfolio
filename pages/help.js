@@ -8,7 +8,7 @@ export default function Help() {
       <>
         <div className={styles.container}>
           <Head>
-            <title>Help/Center -Asikur Portfolio Website</title>
+            <title>Help | Center - Asikur Portfolio Website</title>
            
 
            

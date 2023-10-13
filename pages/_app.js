@@ -79,8 +79,12 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link
           rel="icon"
-         
           href="https://res.cloudinary.com/asikur/image/upload/v1687495721/icon1_gg7gxo.png"
+        />
+       
+        <meta
+          name="og:description"
+          content="Welcome to the Asikur Portfolio Website: Where Creativity Meets Technology. Explore the dynamic world of Asikur, a fusion of personal portfolio and captivating blog. Discover stunning projects, insightful articles, and the talents of Asikur in web development, design, coding, and more. Immerse yourself in a digital experience that showcases the intersection of creativity and technology."
         />
         <meta
           name="keywords"

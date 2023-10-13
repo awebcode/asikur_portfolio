@@ -149,7 +149,7 @@ const Notification = (props) => {
   return (
     <div className="container">
       <Head>
-        <title>{user?.name + "'S"}/Notifications -Asikur Portfolio Website</title>
+        <title>My Notifications -Asikur Portfolio Website</title>
         <meta
           name="description"
           content="Stay informed with notifications on the Asikur Portfolio Website. Receive updates on new projects, blog articles, and community interactions. Customize your notification preferences to ensure you never miss important announcements and stay connected with the latest in the creative and technology world."

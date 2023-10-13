@@ -9,16 +9,23 @@
 }
 :root{
   --x:45deg;
+  
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: #0f172a;
   font-family: "Josefin Sans";
   transition: all 0.3s linear;
 }
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+   overflow-x: hidden !important;
 }
 a {
   font-weight: 500;
