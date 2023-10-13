@@ -10,8 +10,8 @@ const Index = () => {
     <>
       <Head>
         <title>All Works|Portfolio -Asikur Portfolio Website</title>
-       
-
+        
+      
        
       </Head>
       <div className="container">

@@ -73,8 +73,7 @@
     "swiper": "^9.1.0",
     "typewriter-effect": "^2.19.0"
   },
-  
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   }
 }

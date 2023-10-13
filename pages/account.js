@@ -87,7 +87,7 @@ const AccountUser = (props) => {
   return (
     <>
       <Head>
-        <title>{user && user.name}'s/Account -Asikur Portfolio Website</title>
+        <title>My Account -Asikur Portfolio Website</title>
         <meta
           name="description"
           content="Manage your Asikur Portfolio and Blog account: Update your profile, track your projects, and engage with the community. Access exclusive features, personalized recommendations, and stay connected with the latest web development, design, coding, and technology trends. Optimized for Googlebot indexing and ranking."
