@@ -36,10 +36,10 @@ export default () => {
             What I <span>Offer?.</span>
           </motion.h1>
         </Tilt>
-        <div className="flex flex-wrap justify-center  p-2 md:p-20">
+        <div className="flex flex-wrap justify-center  p-2 md:p-20 dark:bg-gray-900">
           {offerData.map((s, i) => (
             <Card
-              className="flex-[40%] max-w-sm mx-auto cursor-pointer"
+              className="flex-[40%] max-w-sm mx-auto cursor-pointer dark:bg-gray-900"
               decoration="left"
               decorationColor="emerald"
               onClick={() => handleCardClick(s)}
