@@ -74,8 +74,8 @@ const ChartComponent = () => (
         Edu<span>cation.</span>
       </motion.h1>
     </Tilt>
-    <div className="flex flex-col md:flex-row space-y-4 md:space-x-4 p-4 py-14 md:p-10 dark:bg-gray-900">
-      <Card className="flex-1 dark:bg-gray-900">
+    <div className="flex flex-col md:flex-row space-y-4 md:space-x-4 p-4 py-14 md:p-10 bg-gray-900 dark:bg-gray-900">
+      <Card className="flex-1 bg-gray-900 dark:bg-gray-900">
         <Title>Education Achievements</Title>
         <div className="h-72 md:h-96 mt-4 mx-auto w-full">
           <AreaChart
@@ -88,7 +88,7 @@ const ChartComponent = () => (
           />
         </div>
       </Card>
-      <Card className="flex-1 dark:bg-gray-900">
+      <Card className="flex-1 bg-gray-900 dark:bg-gray-900">
         <Title>Education Achievements (Bar Chart)</Title>
         <div className="h-72 md:h-96 mt-4 mx-auto w-full">
           <BarChart
