@@ -68,13 +68,18 @@ const Footer = () => {
                   <Link href="https://www.facebook.com/md.asikur.9047506/">Facebook</Link>
                 </li>
                 <li>
-                  <Link href="https://www.github.com/md-asikur/">Github</Link>
+                  <Link href="https://github.com/Md-Asikur-Rahman2">Github</Link>
                 </li>
                 <li>
-                  <Link href="#">Instagram</Link>
+                  <Link href="https://www.fiverr.com/designhill24">Fiverr</Link>
                 </li>
                 <li>
-                  <Link href="#">Twitter</Link>
+                  <Link href="https://www.freelancer.com/u/asikurmd190">Freelancer</Link>
+                </li>
+                <li>
+                  <Link href="https://www.upwork.com/freelancers/~015c702346fb8330d3">
+                    Upwork
+                  </Link>
                 </li>
                 <li>
                   <b>Phone/Whatsapp:</b>01893585782/01853012585
@@ -109,7 +114,7 @@ const Footer = () => {
         </div>
       </footer>
       <p className="center">
-      created by md  asikur<span>2023</span>@all Right <span>Reserved..</span>
+        created by md asikur<span>2023</span>@all Right <span>Reserved..</span>
       </p>
     </div>
   );

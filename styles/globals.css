@@ -21,7 +21,7 @@
 
 @import url("../portfolio/About/about.css");
 @import url("../portfolio/Experience/experience.css");
-@import url("../portfolio/offer/offer.css");
+@import url("../portfolio/Services/offer.css");
 @import url("../portfolio/testimonial/testimoni.css");
 @import url("../portfolio/Portfolio/portfolio.css");
 /* Blog */
@@ -42,6 +42,11 @@
 /* pages */
 @import url("../pages/user/profile/intro/style.css");
 @import url("../pages/user/friendship/friendship.css");
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .single-chat-box
 /* create by 9hour nextecom */
 .img-up .file_img {
@@ -185,3 +190,5 @@ background-color: inherit;
 .MuiTabs-root .MuiButtonBase-root {
   color: var(--txt-color);
 }
+ /* recharts-surface */
+ 

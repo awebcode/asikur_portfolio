@@ -15,6 +15,7 @@ import TestimonialApi from "./TestimonialApi";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
+import { Divider, Text } from "@tremor/react";
 export default function Testiminial() {
   return (
     <>
@@ -68,23 +69,35 @@ export default function Testiminial() {
                 {TestimonialApi.map((v) => {
                   return (
                     <>
-                      <SwiperSlide>
+                      <SwiperSlide className="flex items-center justify-center">
                         <Image
-                          className="img"
+                          className="img rounded-full"
                           src={v.image}
                           alt=""
                           height={1000}
                           width={1000}
+                          style={{ display: "block", margin: "auto", animation: "none" }}
                         />
-                        <div className="swiper-content">
-                          <h2>
-                            <span>{v.name}</span>
-                          </h2>
-                          <h3>{v.offcer}</h3>
-                          <span>{v.post}</span>
-                          <h5>{v.design}</h5>
-                          <p>{v.desc}</p>
-                          <span>{v.date}</span>
+                        <div className="swiper-content text-center">
+                          <Divider>
+                            {" "}
+                            <h2 className="text-3xl md:text-5xl font-bold mb-2">
+                              <span>{v.name}</span>
+                            </h2>
+                          </Divider>
+                          <Divider>
+                            {" "}
+                            <h3 className="text-xl font-semibold mb-2">{v.offcer}</h3>
+                          </Divider>
+                          <Divider>
+                            <span className="text-lg mb-2">{v.post}</span>
+                          </Divider>
+                          <Divider>
+                            {" "}
+                            <h5 className="text-lg font-medium mb-2">{v.design}</h5>{" "}
+                          </Divider>
+                          <Text className="text-gray-700 mb-2">{v.desc}</Text>
+                          <span className="text-gray-500">{v.date}</span>
                         </div>
                       </SwiperSlide>
                     </>

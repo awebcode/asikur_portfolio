@@ -1,5 +1,6 @@
 export const offerData = [
   {
+    sell: 23030,
     title: "Html",
     company_name: "Website Design",
     s1: "Professional Website Design",
@@ -16,13 +17,12 @@ export const offerData = [
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designing visually appealing and user-friendly websites using HTML, CSS, and JavaScript.",
+      "Maintaining open and friendly communication for effective project collaboration.",
     ],
   },
   {
+    sell: 25980,
     title: "Css/Bootstrap",
     company_name: "Website Development",
     s1: "Full Stack Web Developer for Dynamic Websites",
@@ -39,15 +39,14 @@ export const offerData = [
     iconBg: "#E6DEDD",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Full-stack web development expertise for creating dynamic and interactive websites.",
+      "Specializing in e-commerce website development with a focus on user experience.",
     ],
   },
   {
+    sell: 28700,
     title: "Tailwind Css",
-    company_name: "Next.js, Node.js, React.js, and MERN stack developer",
+    company_name: "Next.Js | Node.Js | React.Js | and MERN stack development",
     s1: "I will create a responsive website using Next.js",
     s2: "I will build a custom e-commerce platform with Next.js",
     s3: "Responsive Website Design",
@@ -62,13 +61,13 @@ export const offerData = [
     iconBg: "#E6DEDD",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Creating responsive websites using Next.js for optimal user experience.",
+
+      "Designing visually appealing and user-friendly online shopping websites with responsive layouts.",
     ],
   },
   {
+    sell: 32846,
     title: "Javascript",
     company_name: "MERN Stack Developer: End-to-End Web Development Solutions",
     s1: "Full-stack MERN web development",
@@ -85,15 +84,15 @@ export const offerData = [
     iconBg: "#383E56",
     date: "March 2020 - Running",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building robust RESTful APIs using Node.js and MongoDB for seamless data flow.",
+      "Integrating React.js with MongoDB and Node.js for efficient data handling.",
     ],
   },
   {
+    sell: 45290,
     title: "React Js",
-    company_name: "Next.js/React.js Developer: Build Fast, SEO-Friendly Websites",
+    company_name:
+      "Next.js | Socket.Io Development: Build Fast, SEO-Friendly Websites And Real Time Chat Application",
     s1: "Build a Responsive React/Next.js Web App",
     s2: "Develop a Custom React/Next.js Component",
     s3: "Create a Scalable React/Next.js Website",
@@ -108,15 +107,14 @@ export const offerData = [
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Creating scalable Socket.Io | Next.js websites for seamless growth and expansion.",
+      "Designing and developing engaging Chat Application  with Next.js and Socket.Io for user interaction.",
     ],
   },
   {
+    sell: 78350,
     title: "Node Js",
-    company_name: "Custom Website Design/Development And Fix Errors.",
+    company_name: "Custom Website Design | Development And Fix Errors.",
     s1: "Fix React/Next.js Bugs and Issues",
     s2: "Fix Mern Websites Bugs and Issues",
     s3: "Website Speed Optimization",
@@ -131,10 +129,8 @@ export const offerData = [
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Providing 24/7 online support for immediate issue resolution and client assistance.",
+      "Maintaining open and friendly communication for effective project management.",
     ],
   },
 ];

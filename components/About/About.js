@@ -17,9 +17,23 @@ const skills = [
   "Bootstrap",
   "Tailwind CSS",
   "JavaScript",
+
+  "Figma",
+  "jQuery",
+  "Ember.js",
+  "Three.js",
+  "Material-UI",
+  "Ant Design",
+  "Styled Components",
+  "Emotion",
+  "Semantic UI",
+  "Chakra UI",
+  "ShadCN UI",
+  "Tremor",
+  "Swiper",
+  "Chart.Js",
   "MongoDB",
   "Next.js",
-  "Figma",
   "PostgreSQL",
   "React",
   "Node.js",
@@ -60,8 +74,8 @@ const skills = [
         opacity: 0,
         scale: 0,
         // y: btn ? 50 : 0, // Apply y: 50 if btn is true, otherwise y: 0
-        y: 20, // Apply y: 50 if btn is true, otherwise y: 0
-        x: 20, // Apply x: 0 if btn is true, otherwise x: 500
+        y: 10, // Apply y: 50 if btn is true, otherwise y: 0
+        x: 10, // Apply x: 0 if btn is true, otherwise x: 500
       },
       whileInView: {
         opacity: 1,
@@ -110,7 +124,7 @@ const skills = [
                 whileHover={{ scaleX: 1.2 }}
               >
                 {" "}
-                <span>Who</span> I AM<span>?</span>
+                <span>Who</span>  AM I<span>?</span>
               </motion.h1>
             </Tilt>
 
@@ -150,7 +164,7 @@ const skills = [
                     I am an experienced full-stack web developer mern and professional
                     tutor. I have worked in multiple technologies to build websites and
                     web applications. For me as professional web developer, learning new
-                    technologies in web is my passion. I have worked in node js , react js
+                    technologies in web is my passion. I have worked with node js , react js
                     and now in MONGODB. Right now, I am working as MERN stack engineer on
                     different platform. Just to inform you, JavaScript is my love. I love
                     to code in JavaScript, build projects in JavaScript and tutor in

@@ -34,12 +34,11 @@
   margin: 8px 0px;
   font-size: 30px;
   font-weight: 600;
- 
 }
 .common-title-name {
-   margin: 6px 0px;
+  margin: 6px 0px;
   font-size: 3.3em;
- 
+
   font-weight: 700;
   line-height: 1.2;
 }
@@ -136,15 +135,47 @@
     color: var(--txt-color);
     font-size: 25px;
     font-weight: 600;
-     margin:  14px 0px;
+    margin: 14px 0px;
   }
   .common-title-name {
     font-size: 2.8em;
-    
+
     font-weight: 900;
     line-height: 1.1;
   }
   .title-3 {
     font-size: 1.1em;
+  }
+}
+/* rokcet */
+
+.Rocket::before,
+.Rocket::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #363331, #ff0000, #ff6600, #ffcc00);
+  border-radius: 50%;
+  bottom: -2px;
+  animation: fireAnimation 0.5s infinite alternate;
+}
+
+.Rocket::after {
+ left: -6px;
+  right: 50px;
+}
+.Rocket::before {
+  left: -6px;
+  right: 50px;
+}
+@keyframes fireAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0.8;
   }
 }

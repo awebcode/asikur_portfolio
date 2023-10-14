@@ -1,21 +1,25 @@
-import React from 'react'
+import React from "react";
+import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import ClearIcon from "@mui/icons-material/Clear";
-const Modal = (props) => {
-  return (
-    <>
-      {" "}
-      <div className="modal-prot">
-        <p className="cross" onClick={() => props.setfirst(false)}>
-          <ClearIcon />
-        </p>
 
+const Modal = (props) => {
+  const handleClose = () => {
+    props.setfirst(false);
+  };
+
+  return (
+    <Dialog open={true} onClose={handleClose} className="bg-[#00000046]">
+      <DialogTitle>
         <div className="modal-title">
           <p className="zt">
-            I Will Create Custom <span>Website Design For You</span>
+            I Will Create Custom Website Design For You
           </p>
           <h1 className="zz">{props.v.company_name}</h1>
         </div>
+       
+      </DialogTitle>
+      <DialogContent dividers>
         <div className="modal-content">
           <p className="zzz">
             <span className="zc">
@@ -78,9 +82,23 @@ const Modal = (props) => {
             {props.v.s9}
           </p>
         </div>
-      </div>
-    </>
+      </DialogContent>
+      <DialogActions>
+        <Button
+          onClick={handleClose}
+          className="bg-rose-500 hover:bg-rose-400 text-white"
+        >
+          Cancel
+        </Button>
+        <Button
+          onClick={handleClose}
+          className="bg-emerald-400 hover:bg-emerald-500 text-dark-tremor-brand-faint"
+        >
+          Ok
+        </Button>
+      </DialogActions>
+    </Dialog>
   );
-}
+};
 
-export default Modal
+export default Modal;

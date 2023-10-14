@@ -107,7 +107,7 @@
 }
 /* Login With Google/fb/git style */
 .btn-login-main {
-  margin-top: -100px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +136,8 @@
   background-color: var(--main-color);
   color: var(--main-bg);
   position: relative;
-  width: 510px !important;
+  width: 550px !important;
+  padding: 12px;
   margin: 6px 0px;
   font-size: 18px;
 }
@@ -191,6 +192,6 @@
   .btn-login {
     font-size: 14px;
      position: relative;
-  width: 300px !important;
+  width: 380px !important;
   }
 }

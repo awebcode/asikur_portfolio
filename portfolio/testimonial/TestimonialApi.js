@@ -11,7 +11,7 @@ const TestimonialApi = [
   },
   {
     id: 2,
-    image: "/computer.png",
+    image: "/trc.jpeg",
     design: "John Doe",
     name: "Davei Luace",
     offcer: "Chief Operating Manager",
@@ -21,7 +21,7 @@ const TestimonialApi = [
   },
   {
     id: 3,
-    image: "/meet.png",
+    image: "/bi.jpeg",
     design: "Rainbow-Themes",
     name: "Nevine Acotanza",
     offcer: "Chief Operating Officer",
@@ -31,7 +31,7 @@ const TestimonialApi = [
   },
   {
     id: 4,
-    image: "/blog.png",
+    image: "/pay.png",
     design: "Bound - Trolola",
     name: "Jone Duone Joe",
     offcer: "Operating Officer",
@@ -41,7 +41,7 @@ const TestimonialApi = [
   },
   {
     id: 5,
-    image: "/blog1.png",
+    image: "/pl.png",
     design: "Glassfisom",
     name: "Nevine Dhawan",
     offcer: "CEO Of Officer",
@@ -61,7 +61,7 @@ const TestimonialApi = [
   },
   {
     id: 7,
-    image: "/computer.png",
+    image: "/4.png",
     design: "John Abraham",
     name: "Davei Luace",
     offcer: "Chief Operating Manager",
@@ -71,7 +71,7 @@ const TestimonialApi = [
   },
   {
     id: 8,
-    image: "/meet.png",
+    image: "/3.png",
     design: "Rainbow-Themes",
     name: "Nevine Acotanza",
     offcer: "Chief Operating Officer",
@@ -81,7 +81,7 @@ const TestimonialApi = [
   },
   {
     id: 9,
-    image: "/blog.png",
+    image: "/bi.jpeg",
     design: "Bound - Trolola",
     name: "Jone Duone Joe",
     offcer: "Operating Officer",
@@ -91,7 +91,7 @@ const TestimonialApi = [
   },
   {
     id: 10,
-    image: "/blog1.png",
+    image: "/1.png",
     design: "Glassfisom",
     name: "Nevine Dhawan",
     offcer: "CEO Of Officer",

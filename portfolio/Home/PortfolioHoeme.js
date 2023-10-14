@@ -1,28 +1,24 @@
-import React from 'react'
-import Common from '../../common/Common';
+import React from "react";
+import Common from "../../common/Common";
 
+import About from "../About/About";
+import Contact from "../contact/Contact";
+import Experience from "../Experience/Experience";
 
-import About from '../About/About';
-import Contact from '../contact/Contact';
-import Experience from '../Experience/Experience';
-
-import Navbar from '../Navbar/Navbar'
-import Offer from '../offer/Offer';
-import { offerData } from '../offer/OfferData';
-import Portfolio from '../Portfolio/Portfolio';
-import App from '../testimonial/Swiper';
-import Testiminial from '../testimonial/Testiminial';
-import Footer from '@/components/footer/Footer';
-import PageTransition from '@/components/pageTransition';
-import Head from 'next/head';
-import { LoginWithOtherMethod } from '../contact/LoginWithOtherMethod';
-
-
+import Navbar from "../Navbar/Navbar";
+import { offerData } from "../Services/OfferData";
+import Portfolio from "../Portfolio/Portfolio";
+import App from "../testimonial/Swiper";
+import Testiminial from "../testimonial/Testiminial";
+import Footer from "@/components/footer/Footer";
+import PageTransition from "@/components/pageTransition";
+import Head from "next/head";
+import { LoginWithOtherMethod } from "../contact/LoginWithOtherMethod";
+import Service from "../Services/Service";
 
 const PortfolioHoeme = () => {
   return (
     <div>
-      
       <Navbar />
       <PageTransition />
       <Common
@@ -38,28 +34,29 @@ const PortfolioHoeme = () => {
         title3="Full-Stack Developer"
         span3="MERN."
         title4="I Am A Full-Stack Web Application Developer."
-        span4="In Three Years Of Experience."
+        span4="with 4 Years Of Experience."
         span5="I
         will
         be
         your
         mern
         stack
-        developer.just send me a message to contact friendly."
+        developer.just send me a message."
         btntext="Download Cv"
         btncv="/cv.pdf"
         img="/about3.png"
       />
       <About />
       <Portfolio />
+      <Service />
       <Experience />
-      <Offer />
+
       <Testiminial />
       <Contact />
-      <LoginWithOtherMethod />
+      {/* <LoginWithOtherMethod /> */}
       <Footer />
     </div>
   );
-}
+};
 
-export default PortfolioHoeme
+export default PortfolioHoeme;

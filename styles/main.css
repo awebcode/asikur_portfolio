@@ -17,6 +17,8 @@ body {
   background-color: #0f172a;
   font-family: "Josefin Sans";
   transition: all 0.3s linear;
+   line-height: 1.6;
+  letter-spacing: 0.03em; /* Adjust the value for letter spacing */
 }
 html {
   scroll-behavior: smooth;
@@ -259,11 +261,25 @@ img {
     -webkit-text-stroke: 1px;
   }
 }
-.scroll-to-top {
-  padding: 0px !important;
-  margin: 0px !important;
-  background-color: #5609e6 !important;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
+
+.scroll-to-top {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5609e6 !important;
+  animation: bounce 1s infinite;
+}
+
 .scroll-to-top:focus {
   border: none;
   outline: none;

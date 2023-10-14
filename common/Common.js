@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
+import MoveRocket from "@/components/magic-section/MoveRocket";
 const Common = (props) => {
   const { scrollYProgress } = useViewportScroll();
 
@@ -105,7 +106,7 @@ const Common = (props) => {
                   {/* <br /> */}
                   {props.span5}
                 </p>
-                <button style={{margin:"20px 0px"}} type="" className="common-btn">
+                <button style={{ margin: "20px 0px" }} type="" className="common-btn">
                   <i></i>
                   <i></i>
                   {props.btncv ? (
@@ -119,7 +120,6 @@ const Common = (props) => {
               </div>
               <div className="common-img">
                 <Tilt>
-                  {" "}
                   <Image src={props.img} alt="" width={1000} height={1000} />
                 </Tilt>
               </div>
@@ -316,9 +316,15 @@ const Common = (props) => {
                 }}
                 viewport={{ amount: 1, once: false }}
               >
+                <MoveRocket />
                 <Tilt>
-                  {" "}
-                  <Image src={props.img} alt="" width={1000} height={1000} />
+                  <Image
+                    style={{ zIndex: "888888" }}
+                    src={props.img}
+                    alt=""
+                    width={1000}
+                    height={1000}
+                  />
                 </Tilt>
               </motion.div>
             </div>

@@ -18,6 +18,7 @@ import Tilt from "react-parallax-tilt";
 import Cookies from "js-cookie";
 import AES from "crypto-js/aes";
 import Utf8 from "crypto-js/enc-utf8";
+import { LoginWithOtherMethod } from "./LoginWithOtherMethod";
 const Contact = () => {
   const [ShowPassword, setShowPassword] = useState();
   const navigate=useRouter()
@@ -290,6 +291,7 @@ const [loading, setLoading] = useState(false);
               </div>
             </div>
           </div>
+          <LoginWithOtherMethod />
         </div>
       </div>
     </div>
