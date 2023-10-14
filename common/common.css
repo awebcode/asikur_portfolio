@@ -179,3 +179,15 @@
     opacity: 0.8;
   }
 }
+
+@media  (max-width: 768px) {
+ 
+  .Rocket::before,
+  .Rocket::after {
+    width: 5px; /* Adjust width for mobile */
+    height: 5px; /* Adjust height for mobile */
+    bottom: -4.5px; /* Adjust bottom position for mobile */
+  }
+
+ 
+}

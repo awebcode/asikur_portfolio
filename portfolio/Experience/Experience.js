@@ -140,7 +140,7 @@ const Experience = () => {
     // Add more skills as needed
   ];
   
-  const getAnimationStyles = (index) => {
+  const getDesktopAnimationStyles = (index) => {
     const delay = 0.1 * index; // Adjust the delay based on the index
 
     return {
@@ -174,6 +174,32 @@ const Experience = () => {
       },
     };
   };
+
+  const getMobileAnimationStyles = (index, btn) => {
+    const delay = 0.1 * index;
+
+    return {
+      whileHover: { scale: 1.1 },
+      whileTap: { scale: 1.2 },
+      initial: {
+        opacity: 0,
+        scale: 0,
+      },
+      animate: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delay,
+          duration: 0.5,
+          type: "spring",
+          stiffness: 200,
+          damping: 10,
+        },
+      },
+    };
+  };
+
+  const getAnimationStyles = btn ? getMobileAnimationStyles : getDesktopAnimationStyles;
   return (
     <>
       <motion.div className="experience-1" variants={textVariant()} id="experience">
@@ -211,7 +237,7 @@ const Experience = () => {
       </motion.div>
       <div className="skills-container">
         {skills.map((skill, index) => (
-          <motion.div key={index} className="skillX" {...getAnimationStyles(index)}>
+          <motion.div key={index} className="skillX" {...getAnimationStyles(index,btn)}>
             {skill}
           </motion.div>
         ))}

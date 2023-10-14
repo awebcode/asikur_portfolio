@@ -56,7 +56,7 @@ export default () => {
               </Text>
             </Card>
           ))}
-          <Link href={`/portfolio/Home#experience`} className="see_all_projects">
+          <Link href={`/portfolio/Home#services`} className="see_all_projects">
             See All Offers &rarr;
           </Link>
           {selectedData && <Modal v={selectedData} setfirst={setSelectedData} />}

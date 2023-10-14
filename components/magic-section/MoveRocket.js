@@ -36,9 +36,13 @@ const MoveRocket = () => {
     <motion.div
       className="Rocket"
       animate={controls}
-      style={{ fontSize: "2em", position: "absolute", zIndex: "" }}
+      style={{
+        fontSize: "2em",
+        position: "absolute",
+        zIndex: "",
+       
+      }}
     >
-      
       🚀
     </motion.div>
   );

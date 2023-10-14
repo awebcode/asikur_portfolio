@@ -14,7 +14,7 @@ export default () => {
     return (
       <>
         {" "}
-        <Tilt className="my-2">
+        <Tilt className="my-2" id="services">
           <motion.h1
             className="main-title"
             initial={{ y: 100, opacity: 0 }}

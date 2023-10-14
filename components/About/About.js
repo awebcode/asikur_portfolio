@@ -3,6 +3,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 // import "./about.css";
 import Tilt from "react-parallax-tilt";
+import MobileRockt from "../magic-section/MobileRok";
 const About = () => {
   const [btn, setBtn] = useState(false);
   useEffect(() => {
@@ -11,59 +12,59 @@ const About = () => {
     }
   }, [btn]);
 
-const skills = [
-  "HTML",
-  "CSS",
-  "Bootstrap",
-  "Tailwind CSS",
-  "JavaScript",
+  const skills = [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Tailwind CSS",
+    "JavaScript",
 
-  "Figma",
-  "jQuery",
-  "Ember.js",
-  "Three.js",
-  "Material-UI",
-  "Ant Design",
-  "Styled Components",
-  "Emotion",
-  "Semantic UI",
-  "Chakra UI",
-  "ShadCN UI",
-  "Tremor",
-  "Swiper",
-  "Chart.Js",
-  "MongoDB",
-  "Next.js",
-  "PostgreSQL",
-  "React",
-  "Node.js",
-  "Express.js",
-  "Socket.Io",
-  "ChatEngine.Io",
-  "Sass",
-  "Redux",
-  "Redux-Query",
+    "Figma",
+    "jQuery",
+    "Ember.js",
+    "Three.js",
+    "Material-UI",
+    "Ant Design",
+    "Styled Components",
+    "Emotion",
+    "Semantic UI",
+    "Chakra UI",
+    "ShadCN UI",
+    "Tremor",
+    "Swiper",
+    "Chart.Js",
+    "MongoDB",
+    "Next.js",
+    "PostgreSQL",
+    "React",
+    "Node.js",
+    "Express.js",
+    "Socket.Io",
+    "ChatEngine.Io",
+    "Sass",
+    "Redux",
+    "Redux-Query",
 
-  "Firebase",
-  "Cloudinary",
-  "Google Cloud",
-  "Git",
-  "Github",
-  "TypeScript",
-  "RESTful APIs",
-  "Jest",
-  "Webpack",
-  "AWS",
-  "Heroku",
-  "Netlify",
-  "Vercel",
-  "Cyclic",
-  "Render",
-  "Cpanel",
-  "Hostinger",
-  "Vps",
-  // Add more skills as needed
-];
+    "Firebase",
+    "Cloudinary",
+    "Google Cloud",
+    "Git",
+    "Github",
+    "TypeScript",
+    "RESTful APIs",
+    "Jest",
+    "Webpack",
+    "AWS",
+    "Heroku",
+    "Netlify",
+    "Vercel",
+    "Cyclic",
+    "Render",
+    "Cpanel",
+    "Hostinger",
+    "Vps",
+    // Add more skills as needed
+  ];
   const getDesktopAnimationStyles = (index) => {
     const delay = 0.1 * index; // Adjust the delay based on the index
 
@@ -98,7 +99,32 @@ const skills = [
       },
     };
   };
-    
+  const getMobileAnimationStyles = (index, btn) => {
+    const delay = 0.1 * index;
+
+    return {
+      whileHover: { scale: 1.1 },
+      whileTap: { scale: 1.2 },
+      initial: {
+        opacity: 0,
+        scale: 0,
+      },
+      animate: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delay,
+          duration: 0.5,
+          type: "spring",
+          stiffness: 200,
+          damping: 10,
+        },
+      },
+    };
+  };
+
+  const getAnimationStyles = btn ? getMobileAnimationStyles : getDesktopAnimationStyles;
+
   return (
     <>
       {/* <Head>
@@ -107,6 +133,7 @@ const skills = [
       {btn ? (
         <div className="about">
           <div className="container">
+            <MobileRockt />
             <Tilt>
               {" "}
               <motion.h1
@@ -124,7 +151,7 @@ const skills = [
                 whileHover={{ scaleX: 1.2 }}
               >
                 {" "}
-                <span>Who</span>  AM I<span>?</span>
+                <span>Who</span> AM I<span>?</span>
               </motion.h1>
             </Tilt>
 
@@ -164,10 +191,10 @@ const skills = [
                     I am an experienced full-stack web developer mern and professional
                     tutor. I have worked in multiple technologies to build websites and
                     web applications. For me as professional web developer, learning new
-                    technologies in web is my passion. I have worked with node js , react js
-                    and now in MONGODB. Right now, I am working as MERN stack engineer on
-                    different platform. Just to inform you, JavaScript is my love. I love
-                    to code in JavaScript, build projects in JavaScript and tutor in
+                    technologies in web is my passion. I have worked with node js , react
+                    js and now in MONGODB. Right now, I am working as MERN stack engineer
+                    on different platform. Just to inform you, JavaScript is my love. I
+                    love to code in JavaScript, build projects in JavaScript and tutor in
                     JavaScript.
                   </p>
                 </div>
@@ -276,13 +303,7 @@ const skills = [
       </motion.h1>
       <div className="skills-container">
         {skills.map((skill, index) => (
-          <motion.div
-            key={index}
-            className="skillX"
-           
-              
-            {...getDesktopAnimationStyles(index)}
-          >
+          <motion.div key={index} className="skillX" {...getAnimationStyles(index, btn)}>
             {skill}
           </motion.div>
         ))}

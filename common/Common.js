@@ -7,6 +7,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 import MoveRocket from "@/components/magic-section/MoveRocket";
+import MobileRockt from "@/components/magic-section/MobileRok";
 const Common = (props) => {
   const { scrollYProgress } = useViewportScroll();
 
@@ -119,6 +120,7 @@ const Common = (props) => {
                 </button>
               </div>
               <div className="common-img">
+                <MobileRockt />
                 <Tilt>
                   <Image src={props.img} alt="" width={1000} height={1000} />
                 </Tilt>
