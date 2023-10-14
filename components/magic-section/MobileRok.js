@@ -7,8 +7,8 @@ const MobileRockt = () => {
   useEffect(() => {
     const animateRocket = async () => {
       await controls.start({
-        x: [0, 240,240, 0, 0], // Adjusted x values for mobile
-        y: [0, 0, 480, 480, 0], // Adjusted y values for mobile
+        x: [0, 280,280, 0, 0], // Adjusted x values for mobile
+        y: [0, 0, 340, 340, 0], // Adjusted y values for mobile
         rotate: [0, 90, 180, 270, 360], // Adjust the rotation
         scale: [1, 1.2, 1.4, 1.6, 1.8, 2, 2.1, 2], // Adjusted scale values for mobile
         transition: {
