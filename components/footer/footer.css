@@ -125,6 +125,9 @@
     width: 50%;
     margin-bottom: 30px;
 }
+ .hi-footer .footer-col .number-li{
+	font-size: 11px !important;
+}
 }
 @media(max-width: 574px){
   .hi-footer .footer-col{

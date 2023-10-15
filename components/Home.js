@@ -62,12 +62,12 @@ const Home = () => {
           span3="NEXT.JS"
           title4="I am a Full-Stack Web Application Developer"
           span4="with 4 years of experience."
-          span5="Client satisfaction is my first priority, and let me claim that we are best at it."
-          btntext="Blogs"
+          span5="Client satisfaction is my first priority, and let me claim that we are best at it. I believe in open communication, transparency, and exceeding expectations."
+          btntext="Hire Me"
           btnloc="/blog/Home"
           img="/asik3.jpg"
         />
-{/* <MoveRocket/> */}
+        {/* <MoveRocket/> */}
         <About />
         <Study />
         <Service />
