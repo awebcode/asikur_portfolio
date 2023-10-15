@@ -81,7 +81,7 @@ const Footer = () => {
                     Upwork
                   </Link>
                 </li>
-                <li className='number-li'>
+                <li className='number-li text-[10px] md:text-[16px]'>
                   <b>Phone/Whatsapp:</b>01893585782/01853012585
                 </li>
                 <li>
