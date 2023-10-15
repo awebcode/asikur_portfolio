@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ThemeAction from "@/actions/ThemeAction";
+import Head from "next/head";
 const Hello = (props) => {
   const dispatch = useDispatch();
   const { products,loading } = useSelector((state) => state.allProducts);
@@ -52,6 +53,13 @@ const Hello = (props) => {
  
   return (
     <>
+      <Head>
+        <title>Blog Details By Tags -Asikur Portfolio Website</title>
+        <meta
+          name="description"
+          content={`Blog  Details By Tags -Asikur Portfolio Website | Read the insightful blog post "${data?.title}" on the Asikur Portfolio Website and delve into a world of knowledge and inspiration. Explore in-depth articles, thought-provoking content, and expert perspectives on topics ranging from web development to design trends. Designed for a seamless user experience and accessible to Google bot count, our blog details page provides valuable insights and fosters meaningful discussions in the creative and technology community.`}
+        />
+      </Head>
       {loading ? (
         <Loading />
       ) : (

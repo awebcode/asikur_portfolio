@@ -48,10 +48,10 @@ const Details = (props) => {
   return (
     <div className={`${themeReducer.mode} ${themeReducer.color}`}>
       <Head>
-        <title>{data?.title + "s"} Details -Asikur Portfolio Website</title>
+        <title>Blog Details -Asikur Portfolio Website</title>
         <meta
           name="description"
-          content={`Read the insightful blog post "${data?.title}" on the Asikur Portfolio Website and delve into a world of knowledge and inspiration. Explore in-depth articles, thought-provoking content, and expert perspectives on topics ranging from web development to design trends. Designed for a seamless user experience and accessible to Google bot count, our blog details page provides valuable insights and fosters meaningful discussions in the creative and technology community.`}
+          content={`Blog Details -Asikur Portfolio Website | Read the insightful blog post "${data?.title}" on the Asikur Portfolio Website and delve into a world of knowledge and inspiration. Explore in-depth articles, thought-provoking content, and expert perspectives on topics ranging from web development to design trends. Designed for a seamless user experience and accessible to Google bot count, our blog details page provides valuable insights and fosters meaningful discussions in the creative and technology community.`}
         />
       </Head>
       <DetailsNext slug={id} data={data} />

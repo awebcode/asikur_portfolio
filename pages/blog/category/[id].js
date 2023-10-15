@@ -18,8 +18,7 @@ const Hello = (props) => {
   const [data, setData] = useState([]);
   const router = useRouter();
   const { id } = router.query;
-  console.log("id",id)
-  console.log("data", props);
+  
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(3);
   const lastPostIndex = currentPage * postsPerPage;
@@ -58,12 +57,11 @@ useEffect(() => {
   return (
     <>
       <Head>
-        <title>Create Category/Asikur</title>
-
-        <meta name="robots" content="index,follow" />
-        <meta name="googlebot" content="index,follow" />
-        <meta name="next-head-count" content="*" />
-        <link rel="icon" type="image/png" href="/icon1.png" />
+        <title>Blog Details By Category -Asikur Portfolio Website</title>
+        <meta
+          name="description"
+          content={`Blog  Details By Category -Asikur Portfolio Website | Read the insightful blog post "${data?.title}" on the Asikur Portfolio Website and delve into a world of knowledge and inspiration. Explore in-depth articles, thought-provoking content, and expert perspectives on topics ranging from web development to design trends. Designed for a seamless user experience and accessible to Google bot count, our blog details page provides valuable insights and fosters meaningful discussions in the creative and technology community.`}
+        />
       </Head>
       {loading ? (
         <Loading />

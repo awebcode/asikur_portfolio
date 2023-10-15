@@ -29,13 +29,11 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Portfolio |Home -Asikur Portfolio Website</title>
+        <title>Portfolio | Home -Asikur Portfolio Website</title>
         <meta
           name="description"
-          content="Asikur Portfolio Website::Explore the impressive portfolio collection on the Asikur Portfolio Website. Immerse yourself in a showcase of creative works spanning various domains, including web development, graphic design, photography, and more. Discover the talent, skill, and passion behind each project as talented individuals present their best work. Designed for a seamless user experience and accessible to Google bot count, our main portfolio page provides a curated selection of inspiring projects to ignite your creativity and find inspiration for your own endeavors."
+          content="Portfolio | Home -Asikur Portfolio Website.Asikur Portfolio Website::Explore the impressive portfolio collection on the Asikur Portfolio Website. Immerse yourself in a showcase of creative works spanning various domains, including web development, graphic design, photography, and more. Discover the talent, skill, and passion behind each project as talented individuals present their best work. Designed for a seamless user experience and accessible to Google bot count, our main portfolio page provides a curated selection of inspiring projects to ignite your creativity and find inspiration for your own endeavors."
         />
-
-       
       </Head>
       <div className={`${themeReducer.mode} ${themeReducer.color}`}>
         <PortfolioHoeme />

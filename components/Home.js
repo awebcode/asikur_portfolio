@@ -53,13 +53,13 @@ const Home = () => {
           ty6="Mongo DB."
           title1="Hello There!"
           title2="Welcome To Asikur"
-          span2="Web."
+          span2="2.0"
           title3={
             <>
               <span>Full-Stack</span> Dual Website
             </>
           }
-          span3="MERN."
+          span3="NEXT.JS"
           title4="I am a Full-Stack Web Application Developer"
           span4="with 4 years of experience."
           span5="Client satisfaction is my first priority, and let me claim that we are best at it."

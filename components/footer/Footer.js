@@ -15,7 +15,7 @@ const Footer = () => {
                   <Link href="#about">about me</Link>
                 </li>
                 <li>
-                  <Link href="#">my services</Link>
+                  <Link href="/portfolio/Home#services">my services</Link>
                 </li>
                 <li>
                   <Link href="#">privacy policy</Link>
@@ -61,7 +61,7 @@ const Footer = () => {
               </ul>
             </div>
             <div class="footer-col">
-              <h4>follow Me</h4>
+              <h4>HIRE Me</h4>
 
               <ul>
                 <li>

@@ -33,14 +33,11 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>
-          My Blogs -Asikur Portfolio Website
-        </title>
+        <title>My Blogs -Asikur Portfolio Website</title>
         <meta
           name="description"
-          content="Discover a wealth of insightful and engaging blog content on the Asikur Portfolio Website. Explore the latest articles, industry trends, expert tips, and creative inspiration across a wide range of topics, including web development, design, marketing, and more. Designed for a seamless user experience and accessible to Google bot count, our main blog page offers a platform to expand your knowledge, gain valuable insights, and stay updated with the latest developments in the creative and technology field. Join our community of passionate writers, thought leaders, and enthusiasts, and embark on a journey of continuous learning and growth."
+          content="My Blogs -Asikur Portfolio Website.Discover a wealth of insightful and engaging blog content on the Asikur Portfolio Website. Explore the latest articles, industry trends, expert tips, and creative inspiration across a wide range of topics, including web development, design, marketing, and more. Designed for a seamless user experience and accessible to Google bot count, our main blog page offers a platform to expand your knowledge, gain valuable insights, and stay updated with the latest developments in the creative and technology field. Join our community of passionate writers, thought leaders, and enthusiasts, and embark on a journey of continuous learning and growth."
         />
-        
       </Head>
       <div className={`${themeReducer.mode} ${themeReducer.color}`}>
         <BlogHome />

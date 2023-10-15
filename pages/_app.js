@@ -81,7 +81,7 @@ export default function App({ Component, pageProps }) {
           rel="icon"
           href="https://res.cloudinary.com/asikur/image/upload/v1687495721/icon1_gg7gxo.png"
         />
-       
+
         <meta
           name="og:description"
           content="Welcome to the Asikur Portfolio Website: Where Creativity Meets Technology. Explore the dynamic world of Asikur, a fusion of personal portfolio and captivating blog. Discover stunning projects, insightful articles, and the talents of Asikur in web development, design, coding, and more. Immerse yourself in a digital experience that showcases the intersection of creativity and technology."
@@ -101,6 +101,10 @@ export default function App({ Component, pageProps }) {
         <meta
           name="keywords"
           content="asikur portfolio website,asikur portfolio, portfolio website, blog, personal blog, web developer, software engineer, developer, engineer, computer science, technology, programming, coding, js, next.js, react, node.js, graphql, typescript, css, html, design, development, education, career, experience, skills, asikur/home, asikur/portfolio, asikur/blog, asikur/account, google, google bird, ai, artificial intelligence, web development, web design, best website, showcase, popular website, facebook authentication, google authentication, full-stack, full-stack developer, next.js, asikur portfolio and blog website, mern, asikur personal portfolio and blog website,asikur blog website"
+        />
+        <meta
+          name="keywords"
+          content="Asikur Portfolio Website,asikur,asikur portfolio and blog website,asikur.com, asikur.vercel.app,asikur vercel,asikur portfolio website,asikur portfolio,asikur blog,asikur rahman,ashikur,ashikur.com,Ashikur Portfolio Website,ashikur.vercel.app,portfolio website,asikur portfolio website,ashikur portfolio website,ashikur portfolio,portfolio ashikur"
         />
         <meta name="author" content="Md Asikur Rahman, Asikur, Ashikur" />
         <meta
@@ -129,6 +133,17 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
           rel="stylesheet"
         />
+
+        <meta name="author" content="Ashikur,Asikur me,Asikur Rahman" />
+        <meta property="og:url" content="https://asikur.com,https://asikur.vercel.app" />
+        <meta property="og:type" content="website" data-shuvi-head="true" />
+        <meta name="robots" content="index, follow" />
+        <meta name="site_name" content="Asikur Portfolio" data-shuvi-head="true" />
+        <meta httpEquiv="pragram" content="no-cache" />
+        <meta httpEquiv="cache-control" content="no-cache, no-store, must-revalidate" />
+        <meta httpEquiv="expires" content="0" />
+        <meta httpEquiv="Cache" content="no-cache" />
+        <meta name="browsermode" content="application" />
       </Head>
 
       <SessionProvider session={pageProps.session}>

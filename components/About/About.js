@@ -221,7 +221,7 @@ const About = () => {
                 }}
                 whileHover={{ scaleX: 1.2 }}
               >
-                <span>Who</span> I AM<span>?</span>
+                <span>Who</span> AM I<span>?</span>
               </motion.h1>
             </Tilt>
             <div className="about-main">

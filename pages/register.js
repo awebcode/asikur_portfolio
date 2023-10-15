@@ -7,15 +7,15 @@ const register = () => {
   return (
     <>
       <Head>
-        <title>SignUp | Register |Join With Me -Asikur Portfolio Website</title>
+        <title>Sign Up | Register | Join With Me -Asikur Portfolio Website</title>
 
         <meta
           name="description"
-          content="Register and join the creative journey with Asikur on his captivating portfolio website. Explore web development, design, coding, and technology. Access exclusive content, projects, and insights. Be part of the vibrant community behind the website. Optimized for seamless user experience."
+          content="Sign Up | Register | Join With Me -Asikur Portfolio Website.Register and join the creative journey with Asikur on his captivating portfolio website. Explore web development, design, coding, and technology. Access exclusive content, projects, and insights. Be part of the vibrant community behind the website. Optimized for seamless user experience."
         />
       </Head>
       <Contact />
-      <LoginWithOtherMethod />
+      {/* <LoginWithOtherMethod /> */}
     </>
   );
 }

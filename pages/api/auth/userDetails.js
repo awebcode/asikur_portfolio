@@ -23,15 +23,15 @@ const userDetails = async (req, res, next) => {
     //  console.log("resultLoadUser",result)
     // user = await User.findById(result?._id).populate("friends followers following");
     // user.avatar = user?.image;
-    if (!result) { //!user
-      return res.status(400).json({ msg: "Plese login to access this resource!!😭" });
-    }
+    // if (!result) { //!user
+    //   return res.status(400).json({ msg: "Plese login to access this resource!!" });
+    // }
      
     sendToken(result, 200, res); //result=user
     
    
   } catch (error) {
-    console.log("details error")
-    return res.status(500).json({ msg: error.message });
+     console.log("details error")
+     res.json();
   }
 };

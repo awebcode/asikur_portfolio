@@ -12,7 +12,7 @@ const Index = () => {
         <title>All Works | Asikur's Portfolio - Explore the Journey</title>
         <meta
           name="description"
-          content="Delve into Asikur's captivating portfolio and blog, revealing talent, expertise, and a journey in web development, design, coding, and technology. Engaging articles, projects, and insights await. Get to know the creative mind behind the website. Optimized for Googlebot indexing and ranking."
+          content="All Works | Asikur's Portfolio - Explore the Journey.Delve into Asikur's captivating portfolio and blog, revealing talent, expertise, and a journey in web development, design, coding, and technology. Engaging articles, projects, and insights await. Get to know the creative mind behind the website. Optimized for Googlebot indexing and ranking."
         />
       </Head>
       <div className="container">

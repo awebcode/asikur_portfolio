@@ -237,11 +237,30 @@ const Experience = () => {
       </motion.div>
       <div className="skills-container">
         {skills.map((skill, index) => (
-          <motion.div key={index} className="skillX" {...getAnimationStyles(index,btn)}>
+          <motion.div key={index} className="skillX" {...getAnimationStyles(index, btn)}>
             {skill}
           </motion.div>
         ))}
       </div>
+
+      <Tilt>
+        <motion.h1
+          className={`main-title`}
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          // animate={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.1,
+            opacity: { duration: 1 },
+            y: { type: "spring", stiffness: 60 },
+            duration: 0.9,
+            ease: "easeInOut",
+          }}
+          whileHover={{ scaleX: 1.2 }}
+        >
+          What Is <span>It?</span>
+        </motion.h1>
+      </Tilt>
       <div
         className="experience mt-20 flex flex-col"
         style={{ display: "flex", flexDirection: "column" }}

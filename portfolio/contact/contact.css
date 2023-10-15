@@ -176,7 +176,7 @@
     height: 200px;
   }
 }
-@media screen and (max-width: 880px) {
+@media (max-width: 880px) {
   .contact-box {
     grid-template-columns: 1fr;
   }
@@ -190,8 +190,10 @@
     margin-top: -2px;
   }
   .btn-login {
-    font-size: 14px;
-     position: relative;
-  width: 280px !important;
+     padding: 6px;
+     margin: 3px 0px;
+     font-size: 12px;
+   
+     width: 280px !important;
   }
 }

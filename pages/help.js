@@ -9,9 +9,7 @@ export default function Help() {
         <div className={styles.container}>
           <Head>
             <title>Help | Center - Asikur Portfolio Website</title>
-           
-
-           
+            <meta name="description" content="Help | Center - Asikur Portfolio Website.Ashikur Portfolio Website" />
           </Head>
 
           <main className={styles.main}>
