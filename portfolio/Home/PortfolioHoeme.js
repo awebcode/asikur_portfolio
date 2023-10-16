@@ -40,7 +40,7 @@ const PortfolioHoeme = () => {
         span2="Rahman."
         title3="Full-Stack Developer"
         span3="MERN | NEXT"
-        title4="I Am A Full-Stack Web Application Developer."
+        title4="I am a Full-Stack web application developer."
         span4="with 4 Years Of Experience."
         span5="I
         will

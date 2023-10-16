@@ -18,6 +18,7 @@ body {
   background-color: #0f172a;
   font-family: "Josefin Sans";
   transition: all 0.3s linear;
+  text-transform: none !important;
    line-height: 1.6;
   letter-spacing: 0.03em; /* Adjust the value for letter spacing */
 }

@@ -34,7 +34,6 @@ const About = () => {
               </motion.h1>
             </Tilt>
             <div className="about-main">
-              
               <motion.div
                 className="about-img-port"
                 initial={{ y: -100, opacity: 0 }}
@@ -121,7 +120,7 @@ const About = () => {
                   Full-Stack Web Developer <span>MERN!</span>
                 </h1>
 
-                <p>
+                <p className="normal-case">
                   I am a professional MERN Stack developer having core expertise in
                   developing high-quality, interactive, pixel-perfect, and responsive web
                   applications using react js and next js. I have 4 years of experience in
@@ -279,35 +278,35 @@ const About = () => {
                     Full-Stack Web Developer <span>MERN!</span>
                   </h1>
 
-                  <p>
+                  <p className="normal-case text-gray-300">
                     I am a professional MERN Stack developer having core expertise in
                     developing high-quality, interactive, pixel-perfect, and responsive
                     web applications using react js and next js. I have 4 years of
                     experience in web development and developed several web applications.
                   </p>
+                  <ul className="p-4">
+                    <span className="font-bold">My Development Process.</span>
+                    <li>100% customer satisfaction.</li>
+                    <li>Responsive design.</li>
+                    <li>Well formatted code.</li>
+                    <li>Well structured code.</li>
+                    <li>Reusable components.</li>
+                    <li>High-Quality and Pixel Perfect Design.</li>
+                    <li>24/7 availability</li>
+                    <li>Excellent customer support</li>
+                  </ul>
 
-                  <ul>
-                    <span>My Development Process.</span>
-                    <li>100% customer satisfaction.</li>
-                    <li>Responsive design.</li>
-                    <li>Well formatted code.</li>
-                    <li>Well structured code.</li>
-                    <li>Reusable components.</li>
-                    <li> High-Quality and Pixel Perfect Design.</li>
-                    <li>24/7 availability</li>
-                    <li>Excellent customer support</li>
+                  <ul className="p-4 mt-2">
+                    <span className="font-bold">Why choose me?</span>
+                    <li>Expertise as a Full Stack Developer.</li>
+                    <li>Proven track record of successful projects.</li>
+                    <li>Fast and efficient development process.</li>
+                    <li>Strong problem-solving skills.</li>
+                    <li>Effective communication and collaboration.</li>
+                    <li>Highly adaptable to new technologies.</li>
+                    <li>Continuous learning and improvement.</li>
                   </ul>
-                  <ul>
-                    <span>Why choose me?</span>
-                    <li>100% customer satisfaction.</li>
-                    <li>Responsive design.</li>
-                    <li>Well formatted code.</li>
-                    <li>Well structured code.</li>
-                    <li>Reusable components.</li>
-                    <li> High-Quality and Pixel Perfect Design.</li>
-                    <li>24/7 availability</li>
-                    <li>Excellent customer support</li>
-                  </ul>
+
                   <p className="warn">
                     <span>Note:</span> Kindly discuss your project before placing the
                     order.

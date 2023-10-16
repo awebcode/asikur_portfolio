@@ -200,7 +200,7 @@ const About = () => {
                     <span>Full-Stack</span> Web Developer <span>MERN</span>
                   </h1>
 
-                  <p>
+                  <p className="normal-case text-gray-300">
                     {/* I am a computer science graduate and a full stack developer with over 3
                 years of experience. Learning computer technologies and acquiring new
                 skills is my passion. */}
@@ -282,7 +282,7 @@ const About = () => {
                     <span>Full-Stack</span> Web Developer <span>MERN</span>
                   </h1>
 
-                  <p>
+                  <p className="normal-case text-gray-300">
                     {/* I am a computer science graduate and a full stack developer with over 3
                 years of experience. Learning computer technologies and acquiring new
                 skills is my passion. */}

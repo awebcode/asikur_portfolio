@@ -99,15 +99,18 @@ const Common = (props) => {
                     </span>
                   </h1>
                 )}
-                <h1 className="title-3">
+                <h1 className="title-3 text-gray-300">
                   {props.title3}
                   <span> {props.span3}</span>
                 </h1>
 
-                <p style={{ paddingTop: "6px" }}>
+                <p
+                  className="text-gray-300"
+                  style={{ paddingTop: "6px", textTransform: "none" }}
+                >
                   {props.title4} {props.span4}
                 </p>
-                <p>
+                <p className="normal-case text-gray-300">
                   {/* <br /> */}
                   {props.span5}
                 </p>
@@ -333,8 +336,8 @@ const Common = (props) => {
                     height={1000}
                     style={{ width: "1000px", height: "100px", objectFit: "cover" }}
                     src={props.img}
-                      alt="asikur image"
-                      objectFit="cover"
+                    alt="asikur image"
+                    objectFit="cover"
                     layout="responsive"
                   />
                 </Tilt>
