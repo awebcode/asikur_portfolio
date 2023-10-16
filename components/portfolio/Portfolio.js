@@ -77,7 +77,6 @@ const Portfolio = () => {
                 // id="btn-port"
 
                 className="common-btn"
-               
                 onClick={() => setData(Data)}
               >
                 <i></i>
@@ -88,7 +87,6 @@ const Portfolio = () => {
                 // id="btn-port"
 
                 className="common-btn"
-              
                 onClick={() => filter("ecommerce")}
               >
                 <i></i>
@@ -99,7 +97,6 @@ const Portfolio = () => {
                 // id="btn-port"
 
                 className="common-btn"
-              
                 onClick={() => filter("portfolio")}
               >
                 <i></i>
@@ -111,12 +108,22 @@ const Portfolio = () => {
                 // id="btn-port"
 
                 className="common-btn"
-               
+                onClick={() => filter("crypto")}
+              >
+                <i></i>
+                <i></i>
+                <a>Crypto</a>
+              </button>
+
+              <button
+                // id="btn-port"
+
+                className="common-btn"
                 onClick={() => filter("college")}
               >
                 <i></i>
                 <i></i>
-                <a>University Website</a>
+                <a>University</a>
               </button>
             </div>
           ) : (
@@ -209,6 +216,28 @@ const Portfolio = () => {
                 <i></i>
                 <i></i>
                 <a>University Website</a>
+              </motion.button>
+              <motion.button
+                // id="btn-port"
+
+                className="common-btn"
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                // animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.6,
+                  opacity: { duration: 1 },
+                  x: { type: "spring", stiffness: 60 },
+                  duration: 0.2,
+                  ease: "easeOut",
+                }}
+                viewport={{ amount: 1 }}
+                whileHover={{ scale: 1.08, transition: "none" }}
+                onClick={() => filter("crypto")}
+              >
+                <i></i>
+                <i></i>
+                <a>Crypto Website</a>
               </motion.button>
             </div>
           )}

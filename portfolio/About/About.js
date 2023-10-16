@@ -124,7 +124,7 @@ const About = () => {
                 <p>
                   I am a professional MERN Stack developer having core expertise in
                   developing high-quality, interactive, pixel-perfect, and responsive web
-                  applications using react js and next js. I have 3 years of experience in
+                  applications using react js and next js. I have 4 years of experience in
                   web development and developed several web applications.
                 </p>
 
@@ -237,7 +237,7 @@ const About = () => {
                     </p>
                   </motion.div>
                   <motion.div
-                    className="about-completed"
+                    className="about-completed block"
                     whileHover={{ scale: 0.8, transition: "none" }}
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -282,7 +282,7 @@ const About = () => {
                   <p>
                     I am a professional MERN Stack developer having core expertise in
                     developing high-quality, interactive, pixel-perfect, and responsive
-                    web applications using react js and next js. I have 3 years of
+                    web applications using react js and next js. I have 4 years of
                     experience in web development and developed several web applications.
                   </p>
 

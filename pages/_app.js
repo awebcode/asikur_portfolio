@@ -77,10 +77,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link
-          rel="icon"
-          href="https://res.cloudinary.com/asikur/image/upload/v1687495721/icon1_gg7gxo.png"
-        />
+        <link rel="icon" type="image/png" href="/icon1.png" />
 
         <meta
           name="og:description"
@@ -117,7 +114,7 @@ export default function App({ Component, pageProps }) {
 
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/asikur/image/upload/v1680710238/Screenshot_233_hbs1dm.png"
+          content="https://res.cloudinary.com/asikur/image/upload/c_thumb,w_200,g_face/v1697458521/Screenshot_502_vzrohp.png"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />

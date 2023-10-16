@@ -346,6 +346,7 @@ img {
   position: relative;
   /* background-color: transparent; */
   /* border: 1px solid var(--main-color); */
+  margin: 6px;
   padding: 25px 80px;
   /* width: 100%; */
   height: 45px;

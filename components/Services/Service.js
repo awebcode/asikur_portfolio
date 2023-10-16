@@ -40,7 +40,7 @@ export default () => {
         <div className="flex flex-wrap justify-center  p-2 md:p-20 bg-gray-900 dark:bg-gray-900">
           {offerData?.slice(0, 3)?.map((s, i) => (
             <Card
-              className="flex-[40%] max-w-sm mx-auto cursor-pointer bg-gray-900 dark:bg-gray-900"
+              className="flex-[100%] md:flex-[40%] max-w-sm mx-auto cursor-pointer bg-gray-900 dark:bg-gray-900"
               decoration="left"
               decorationColor="emerald"
               onClick={() => handleCardClick(s)}

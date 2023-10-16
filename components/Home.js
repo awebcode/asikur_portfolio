@@ -10,12 +10,15 @@ import Navbar from "./Navbar/Navbar";
 import ThemeAction from "../actions/ThemeAction";
 import Portfolio from "./portfolio/Portfolio";
 import Pricing from "./pricing/Pricing";
-import Footer from "./footer/Footer";
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("./footer/Footer"));
 import { LoginWithOtherMethod } from "@/portfolio/contact/LoginWithOtherMethod";
 import FAQ from "./faq";
 import Study from "./study/Study";
 import Service from "./Services/Service";
 import MoveRocket from "./magic-section/MoveRocket";
+import PortfolioHeader from "@/portfolio/About/Sec2";
 const Home = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
@@ -65,17 +68,18 @@ const Home = () => {
           span5="Client satisfaction is my first priority, and let me claim that we are best at it. I believe in open communication, transparency, and exceeding expectations."
           btntext="Hire Me"
           btnloc="https://www.facebook.com/md.asikur.9047506/"
-          img="/asik3.jpg"
+          img="/home/1.png"   //asik3.jpg
         />
         {/* <MoveRocket/> */}
         <About />
         <Study />
         <Service />
+        {/* <PortfolioHeader/> */}
         <Experience />
         <Portfolio />
         {/* <Blog /> */}
         {/* <FAQ/> */}
-        <Pricing />
+        {/* <Pricing /> */}
         <Contact />
         {/* <LoginWithOtherMethod/> */}
         <Footer />

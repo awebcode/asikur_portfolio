@@ -31,8 +31,6 @@ const Portfolio = () => {
  }, [btn]);
   return (
     <>
-      
-
       <div className="portfolio" id="portfolio">
         {" "}
         <div className="container">
@@ -59,7 +57,6 @@ const Portfolio = () => {
                 // id="btn-port"
                 className="common-btn"
                 onClick={() => setData(Data)}
-              
               >
                 <i></i>
                 <i></i>
@@ -69,7 +66,6 @@ const Portfolio = () => {
                 // id="btn-port"
                 className="common-btn"
                 onClick={() => filter("ecommerce")}
-               
               >
                 <i></i>
                 <i></i>
@@ -79,7 +75,6 @@ const Portfolio = () => {
                 // id="btn-port"
                 className="common-btn"
                 onClick={() => filter("portfolio")}
-               
               >
                 <i></i>
                 <i></i>
@@ -89,12 +84,21 @@ const Portfolio = () => {
               <button
                 // id="btn-port"
                 className="common-btn"
-                onClick={() => filter("3d")}
-               
+                onClick={() => filter("crypto")}
               >
                 <i></i>
                 <i></i>
-                <a>3d Website</a>
+                <a>Crypto</a>
+              </button>
+              <button
+                // id="btn-port"
+
+                className="common-btn"
+                onClick={() => filter("college")}
+              >
+                <i></i>
+                <i></i>
+                <a>University</a>
               </button>
             </div>
           ) : (
@@ -183,7 +187,7 @@ const Portfolio = () => {
               >
                 <i></i>
                 <i></i>
-                <a>3d Website</a>
+                <a>Crypto Website</a>
               </motion.button>
             </div>
           )}

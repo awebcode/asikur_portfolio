@@ -40,6 +40,7 @@ function Dropdown({ user, notification, messagenotification }) {
           //   onMouseLeave={() => {
           //     setOpen(false);
           //   }}
+
         >
           <img
             className="dropdown-trigger"
@@ -59,7 +60,7 @@ function Dropdown({ user, notification, messagenotification }) {
             <h3>
               <Link href={"/"}>
                 <Image
-                  src={"/logo.png"}
+                  src={"/dropdown/user.png"}
                   height={50}
                   width={50}
                   style={{ animation: "none" }}
@@ -67,7 +68,7 @@ function Dropdown({ user, notification, messagenotification }) {
               </Link>
               <br />
               <span style={{ textAlign: "center" }}>
-                {user?.name ? user?.name : "Your Website"}
+                {user?.name ? user?.name : "Asik Website"}
               </span>
             </h3>
             <span style={{ display: "flex" }}>

@@ -1,4 +1,5 @@
 import { ArrowRight } from '@mui/icons-material';
+import { BadgeDelta } from '@tremor/react';
 import Link from 'next/link';
 import React from 'react'
 
@@ -81,7 +82,7 @@ const Footer = () => {
                     Upwork
                   </Link>
                 </li>
-                <li className='number-li text-[13px] md:text-[16px]'>
+                <li className="number-li text-[13px] md:text-[16px]">
                   <b>Phone/Whatsapp:</b>01893585782/01853012585
                 </li>
                 <li>
@@ -113,8 +114,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <p className="center">
-        created by md asikur<span>2023</span>@all Right <span>Reserved..</span>
+      
+      <p className="center text-[10px] md:text-lg">
+        created by md asikur 2023 © all right reserved!
       </p>
     </div>
   );

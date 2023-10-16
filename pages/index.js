@@ -47,10 +47,7 @@ export default function Index() {
 
         <meta name="author" content="Md Asikur Rahman,asikur,Ashikur" />
         <meta name="site_name" content="Asikur Portfolio Website" />
-        <meta
-          property="og:url"
-          content="https://asikur.com,https://asikur.vercel.app"
-        />
+        <meta property="og:url" content="https://asikur.com,https://asikur.vercel.app" />
         <meta property="og:type" content="website" />
         <meta name="author" content="Ashikur,Asikur me,Asikur Rahman" />
 
@@ -64,7 +61,7 @@ export default function Index() {
         <meta name="browsermode" content="application" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/asikur/image/upload/v1680710238/Screenshot_233_hbs1dm.png"
+          content="https://res.cloudinary.com/asikur/image/upload/c_thumb,w_200,g_face/v1697458521/Screenshot_502_vzrohp.png"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />

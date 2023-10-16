@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 const chartdata = [
   {
-    date: "22 -2016",
+    date: "2012 -2016",
     gpa: 5, // Change gpa to whatever you're tracking
     examName: "Secondary School Certificate",
     degree: "GPA 5",
@@ -74,7 +74,7 @@ const ChartComponent = () => (
         Edu<span>cation.</span>
       </motion.h1>
     </Tilt>
-    <div className="flex flex-col md:flex-row space-y-4 md:space-x-4 p-4 py-14 md:p-10 bg-gray-900 dark:bg-gray-900">
+    <div className="flex flex-col md:flex-row space-y-4 md:space-x-4 w-[100vw] p-4 py-14 md:p-10 bg-gray-900 dark:bg-gray-900">
       <Card className="flex-1 bg-gray-900 dark:bg-gray-900">
         <Title>Education Achievements</Title>
         <div className="h-72 md:h-96 mt-4 mx-auto w-full">

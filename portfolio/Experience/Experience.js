@@ -108,8 +108,10 @@ const Experience = () => {
     "Tremor",
     "Swiper",
     "MongoDB",
-    "Next.js",
     "PostgreSQL",
+    "MySQL",
+    "Next.js",
+    
     "React",
     "Node.js",
     "Express.js",
@@ -117,7 +119,10 @@ const Experience = () => {
     "ChatEngine.Io",
     "Sass",
     "Redux",
-    "Redux-Query",
+    "React-Query",
+    "Rtk-Query",
+    "Crypto",
+    "Tron-Trc20",
 
     "Firebase",
     "Cloudinary",
@@ -243,7 +248,7 @@ const Experience = () => {
         ))}
       </div>
 
-      <Tilt>
+      {/* <Tilt>
         <motion.h1
           className={`main-title`}
           initial={{ y: 100, opacity: 0 }}
@@ -270,7 +275,7 @@ const Experience = () => {
             <ExperienceCard key={`experience-${index}`} experience={experience} />
           ))}
         </VerticalTimeline>
-      </div>
+      </div> */}
     </>
   );
 };

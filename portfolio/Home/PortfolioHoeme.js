@@ -10,11 +10,15 @@ import { offerData } from "../Services/OfferData";
 import Portfolio from "../Portfolio/Portfolio";
 import App from "../testimonial/Swiper";
 import Testiminial from "../testimonial/Testiminial";
-import Footer from "@/components/footer/Footer";
+
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("@/components/footer/Footer"));
 import PageTransition from "@/components/pageTransition";
 import Head from "next/head";
 import { LoginWithOtherMethod } from "../contact/LoginWithOtherMethod";
 import Service from "../Services/Service";
+import PortfolioHeader from "../About/Sec2";
 
 const PortfolioHoeme = () => {
   return (
@@ -47,11 +51,13 @@ const PortfolioHoeme = () => {
         developer.just send me a message."
         btntext="Download Cv"
         btncv="/cv.pdf"
-        img="/about3.png"
+        img="/home/3.png" ///about3.png
       />
       <About />
-      <Portfolio />
+      <PortfolioHeader />
+
       <Service />
+      <Portfolio />
       <Experience />
 
       <Testiminial />

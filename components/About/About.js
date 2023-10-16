@@ -33,9 +33,12 @@ const About = () => {
     "Tremor",
     "Swiper",
     "Chart.Js",
+
     "MongoDB",
-    "Next.js",
     "PostgreSQL",
+    "MySQL",
+    "Next.js",
+
     "React",
     "Node.js",
     "Express.js",
@@ -43,8 +46,10 @@ const About = () => {
     "ChatEngine.Io",
     "Sass",
     "Redux",
-    "Redux-Query",
-
+    "React-Query",
+    "Rtk-Query",
+    "Crypto",
+    "Tron-Trc20",
     "Firebase",
     "Cloudinary",
     "Google Cloud",

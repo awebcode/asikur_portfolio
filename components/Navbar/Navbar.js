@@ -21,6 +21,19 @@ const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const [notification, setUserNotification]=useState([])
   const ref = useRef(null);
+   const [isMobile, setIsMobile] = useState();
+
+   useEffect(() => {
+     const handleResize = () => {
+       setIsMobile(window.innerWidth >= 768);
+     };
+
+     window.addEventListener("resize", handleResize);
+
+     return () => {
+       window.removeEventListener("resize", handleResize);
+     };
+   }, []);
   useEffect(() => {
     let handler = (e) => {
       if (ref.current && !ref.current.contains(e.target)) {
@@ -45,11 +58,17 @@ const Navbar = () => {
   return (
     <>
       <nav className="main-nav" ref={ref}>
-        <div className="logo">
+        <div className="logo" style={{ marginLeft: isMobile ? "-50px" : "0px" }}>
           <Link href={"/"}>
-            {" "}
-            {/* <span>Asikur</span> */}
-            <img src="/logo.png" alt="" />
+            <img
+              style={{
+                height: isMobile ? "60px" : "120px",
+                width: isMobile ? "60px" : "120px",
+              }}
+              className="animate-none"
+              src="/logo/logo.png"
+              alt=""
+            />
           </Link>
         </div>
         {/* 2nd menu part  */}

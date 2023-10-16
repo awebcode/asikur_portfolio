@@ -329,11 +329,13 @@ const Common = (props) => {
                 <MoveRocket />
                 <Tilt>
                   <Image
-                    style={{ zIndex: "888888" }}
-                    src={props.img}
-                    alt=""
                     width={1000}
                     height={1000}
+                    style={{ width: "1000px", height: "100px", objectFit: "cover" }}
+                    src={props.img}
+                      alt="asikur image"
+                      objectFit="cover"
+                    layout="responsive"
                   />
                 </Tilt>
               </motion.div>
