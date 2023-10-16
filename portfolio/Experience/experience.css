@@ -44,11 +44,11 @@ color: var(--main-bg);
 }
 
 .skillX {
-  padding: 10px 20px;
-  margin: 10px;
+  padding: 6px 15px;
+  margin: 8px;
   background-color: #334155;
-  border-radius: 8px;
-  font-size: 18px;
+  border-radius: 6px;
+  font-size: 16px;
   font-weight: bold;
   color:var(--main-color);
   text-align: center; /* Center the text in the skill box */
@@ -65,7 +65,13 @@ color: var(--main-bg);
 }
 .skillX {
  
-  font-size: 13px;
+  font-size: 12px;
+
+  padding: 4px 8px;
+  margin: 7px;
+  background-color: #334155;
+  border-radius: 5px;
+  
  
 }
 }

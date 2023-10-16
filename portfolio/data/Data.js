@@ -41,7 +41,7 @@ export const Data = [
     desc: "The portfolio website project involves creating a website to showcase a professional's skills, achievements, and work samples. The website will have four main pages, including the home page, about page, portfolio page, and contact page. The project will be divided into design, development, and deployment stages, and will be completed using HTML, CSS, and JavaScript. The website will be fully responsive, adapt to different screen sizes and devices, and have interactive features such as hover effects and scroll animations. The website will be deployed to a web server and tested to ensure that all links, images, and functionality are working correctly.",
     cat: "crypto",
     onclick: "https://duolancer.com/",
-    title: "Earning website -Duolancer",
+    title: "Earning website -Duolancer |As Demo",
     date: "10/02/2023/",
   },
   {
@@ -50,7 +50,7 @@ export const Data = [
     desc: "The portfolio website project involves creating a website to showcase a professional's skills, achievements, and work samples. The website will have four main pages, including the home page, about page, portfolio page, and contact page. The project will be divided into design, development, and deployment stages, and will be completed using HTML, CSS, and JavaScript. The website will be fully responsive, adapt to different screen sizes and devices, and have interactive features such as hover effects and scroll animations. The website will be deployed to a web server and tested to ensure that all links, images, and functionality are working correctly.",
     cat: "crypto",
     onclick: "https://duolancer.com/",
-    title: "Earning website -Duolancer",
+    title: "Earning website -Duolancer |As Demo",
     date: "04/02/2023/",
   },
   {
@@ -59,7 +59,7 @@ export const Data = [
     desc: "The portfolio website project involves creating a website to showcase a professional's skills, achievements, and work samples. The website will have four main pages, including the home page, about page, portfolio page, and contact page. The project will be divided into design, development, and deployment stages, and will be completed using HTML, CSS, and JavaScript. The website will be fully responsive, adapt to different screen sizes and devices, and have interactive features such as hover effects and scroll animations. The website will be deployed to a web server and tested to ensure that all links, images, and functionality are working correctly.",
     cat: "portfolio",
     onclick: "https://duolancer.com/",
-    title: "Earning website -Duolancer",
+    title: "Earning website -Duolancer |As Demo",
     date: "10/02/2023/",
   },
   {

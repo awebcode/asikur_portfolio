@@ -5,17 +5,14 @@ import React from "react";
 const PortfolioHeader = () => {
   const projects = [
     {
-      title: "Duolancer",
-      url: "https://duolancer.com",
+      title: "Artrium",
+      url: "https://artrium.vercel.app",
     },
     {
       title: "Amazon E-Commerce App",
       url: "https://amazonecommerceapp.vercel.app",
     },
-    {
-      title: "Artrium",
-      url: "https://artrium.vercel.app",
-    },
+
     {
       title: "Asikur Personal Website",
       url: "https://asikur.vercel.app",
@@ -31,6 +28,10 @@ const PortfolioHeader = () => {
     {
       title: "Jhenaidah Polytechnic Institute",
       url: "https://jhenaidahpolyasik.netlify.app",
+    },
+    {
+      title: "Duolancer -As a demo",
+      url: "https://duolancer.com",
     },
     {
       title: "Asikur Dual Web React",

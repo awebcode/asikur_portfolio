@@ -34,14 +34,14 @@ const About = () => {
     "Tremor",
     "Swiper",
     "React Spring",
-     "Aos",
-  "Framer Motion",
-  "GSAP",
-  "Anime.js",
-  "React Transition Group",
-  "React-Motion",
-  
-  "Lottie for React",
+    "Aos",
+    "Framer Motion",
+    "GSAP",
+    "Anime.js",
+    "React Transition Group",
+    "React-Motion",
+
+    "Lottie for React",
     "Chart.Js",
 
     "MongoDB",
@@ -93,11 +93,12 @@ const About = () => {
         y: 10, // Apply y: 50 if btn is true, otherwise y: 0
         x: 10, // Apply x: 0 if btn is true, otherwise x: 500
       },
-      whileInView: {
+      animate: {
+        //add whileInview And see magic
         opacity: 1,
         scale: 1,
         y: btn ? 40 : 0,
-        x: btn ? 0 : 100,
+        x: btn ? 0 : 20,
         transition: {
           delay, // Use the calculated delay
           duration: 0.5, // Added duration for whileInView transition
