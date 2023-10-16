@@ -11,12 +11,12 @@ import Close from "@mui/icons-material/Close";
 import Settings from "@mui/icons-material/Settings";
 import "./thememenu.module.css";
 const mode_settings = [
-  {
-    id: "light",
-    name: "Light",
-    background: "light-background",
-    class: "theme-mode-light",
-  },
+  // {
+  //   id: "light",
+  //   name: "Light",
+  //   background: "light-background",
+  //   class: "theme-mode-light",
+  // },
   {
     id: "dark",
     name: "Dark",
