@@ -68,13 +68,15 @@ const Home = () => {
           span5="Client satisfaction is my first priority, and let me claim that we are best at it. I believe in open communication, transparency, and exceeding expectations."
           btntext="Hire Me"
           btnloc="https://www.facebook.com/md.asikur.9047506/"
-          img="/home/1.png"   //asik3.jpg
+          img="/home/1.png" //asik3.jpg
         />
         {/* <MoveRocket/> */}
+
         <About />
+        {/* <PortfolioHeader /> */}
         <Study />
         <Service />
-        {/* <PortfolioHeader/> */}
+
         <Experience />
         <Portfolio />
         {/* <Blog /> */}

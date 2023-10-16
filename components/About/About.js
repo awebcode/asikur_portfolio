@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 // import "./about.css";
 import Tilt from "react-parallax-tilt";
 import MobileRockt from "../magic-section/MobileRok";
+import PortfolioHeader from "@/portfolio/About/Sec2";
 const About = () => {
   const [btn, setBtn] = useState(false);
   useEffect(() => {
@@ -290,6 +291,7 @@ const About = () => {
           </div>
         </div>
       )}
+      <PortfolioHeader />
       <motion.h1
         className={`main-title`}
         initial={{ y: 100, opacity: 0 }}
