@@ -98,6 +98,15 @@ const Experience = () => {
     "jQuery",
     "Ember.js",
     "Three.js",
+    "React Spring",
+    "Framer Motion",
+    "Aos",
+    "GSAP",
+    "Anime.js",
+    "React Transition Group",
+    "React-Motion",
+
+    "Lottie for React",
     "Material-UI",
     "Ant Design",
     "Styled Components",
@@ -111,7 +120,7 @@ const Experience = () => {
     "PostgreSQL",
     "MySQL",
     "Next.js",
-    
+
     "React",
     "Node.js",
     "Express.js",

@@ -33,6 +33,15 @@ const About = () => {
     "ShadCN UI",
     "Tremor",
     "Swiper",
+    "React Spring",
+     "Aos",
+  "Framer Motion",
+  "GSAP",
+  "Anime.js",
+  "React Transition Group",
+  "React-Motion",
+  
+  "Lottie for React",
     "Chart.Js",
 
     "MongoDB",
