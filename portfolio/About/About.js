@@ -214,7 +214,7 @@ const About = () => {
                   >
                     <h1>Experience.</h1>
                     <p>
-                      3Years + <span>Experience</span>
+                      4Years + <span>Experience</span>
                     </p>
                   </motion.div>
                   <motion.div
