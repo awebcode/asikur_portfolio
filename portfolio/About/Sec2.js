@@ -64,8 +64,7 @@ const PortfolioHeader = () => {
       transition: {
         duration: 0.3,
         type: "spring",
-        stiffness: 350,
-        damping: 30,
+        
         ease: "easeInOut",
       },
     };
