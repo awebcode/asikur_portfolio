@@ -14,7 +14,7 @@ const PortfolioHeader = () => {
     },
 
     {
-      title: "Asikur Personal Website",
+      title: "Asikur Portfolio Website",
       url: "https://asikur.vercel.app",
     },
     {
@@ -30,7 +30,7 @@ const PortfolioHeader = () => {
       url: "https://jhenaidahpolyasik.netlify.app",
     },
     {
-      title: "Duolancer -As a demo",
+      title: "I can making crypto | trading -Duolancer | MTFE",
       url: "https://duolancer.com",
     },
     {
