@@ -59,11 +59,11 @@ const PortfolioHeader = () => {
 
   const getStyles = () => {
     return {
-      whileHover: { scale: 1.05, opacity: 0.8 },
+      whileHover: { scale: 1.05, opacity: 0.9 },
       whileTap: { scale: 1.1 },
       transition: {
         duration: 0.3,
-        type: "spring",
+       
         
         ease: "easeInOut",
       },
