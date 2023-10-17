@@ -58,20 +58,19 @@ const PortfolioHeader = () => {
   ];
 
   const getStyles = () => {
-   
-
     return {
-      whileHover: { scale: 1.1 },
-      whileTap: { scale: 1.2 },
-     
+      whileHover: { scale: 1.05, opacity: 0.8 },
+      whileTap: { scale: 1.1 },
       transition: {
-        duration: 0.5, // Adjust duration for initial and whileTap transitions
-        type: "spring", // Added spring animation
-        stiffness: 200, // Adjust spring stiffness
-        damping: 10, // Adjust spring damping
+        duration: 0.3,
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+        ease: "easeInOut",
       },
     };
   };
+
   return (
     <div className="p-2 m-2">
       <div className="container mx-auto p-2 md:p-8  rounded-lg ">
