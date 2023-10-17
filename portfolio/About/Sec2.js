@@ -1,7 +1,7 @@
 import { BadgeDelta, Card, Divider, Metric, Title } from "@tremor/react";
 import Link from "next/link";
 import React from "react";
-
+import { motion } from "framer-motion";
 const PortfolioHeader = () => {
   const projects = [
     {
@@ -57,6 +57,21 @@ const PortfolioHeader = () => {
     },
   ];
 
+  const getStyles = () => {
+   
+
+    return {
+      whileHover: { scale: 1.1 },
+      whileTap: { scale: 1.2 },
+     
+      transition: {
+        duration: 0.5, // Adjust duration for initial and whileTap transitions
+        type: "spring", // Added spring animation
+        stiffness: 200, // Adjust spring stiffness
+        damping: 10, // Adjust spring damping
+      },
+    };
+  };
   return (
     <div className="p-2 m-2">
       <div className="container mx-auto p-2 md:p-8  rounded-lg ">
@@ -67,9 +82,10 @@ const PortfolioHeader = () => {
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
               {projects.map((project, index) => (
-                <Card
+                <motion.Card
                   key={index}
                   className="bg-gray-900 dark:bg-gray-900 p-2 md:p-4 my-3px md:my-[6px] rounded-lg shadow-lg text-white"
+                  {...getStyles()}
                 >
                   {/* <Metric className="text-xl font-bold mb-2">{project.title}</Metric> */}
                   <Divider>{project.title}</Divider>
@@ -81,7 +97,7 @@ const PortfolioHeader = () => {
                   >
                     {project.url}
                   </Link>
-                </Card>
+                </motion.Card>
               ))}
             </div>
           </div>
