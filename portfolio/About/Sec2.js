@@ -30,8 +30,8 @@ const PortfolioHeader = () => {
       url: "https://jhenaidahpolyasik.netlify.app",
     },
     {
-      title: "I can making crypto | trading -Duolancer | MTFE",
-      url: "https://duolancer.com",
+      title: "Demo website - Duolancer",
+      url: "https://www.duolancer.com",
     },
     {
       title: "Asikur Dual Web React",
