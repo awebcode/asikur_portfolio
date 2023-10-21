@@ -69,7 +69,10 @@ const Footer = () => {
                   <Link href="https://www.facebook.com/md.asikur.9047506/">Facebook</Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/Md-Asikur-Rahman2">Github</Link>
+                  <Link href="https://github.com/Md-Asikur">Github -Previous</Link>
+                </li>
+                <li>
+                  <Link href="https://github.com/Md-Asikur-Rahman2">Github -Latest</Link>
                 </li>
                 <li>
                   <Link href="https://www.fiverr.com/designhill24">Fiverr</Link>
@@ -114,7 +117,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      
+
       <p className="center text-[10px] md:text-lg">
         created by md asikur 2023 © all right reserved!
       </p>
