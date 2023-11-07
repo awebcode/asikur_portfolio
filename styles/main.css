@@ -16,6 +16,7 @@
 body {
   overflow-x: hidden !important;
   background-color: #0f172a;
+  scroll-behaviour:smooth;
   font-family: "Josefin Sans";
   transition: all 0.3s linear;
   text-transform: none !important;
