@@ -50,10 +50,13 @@ const PortfolioHeader = () => {
       title: "Asikur Portfolio",
       url: "https://asikurportfolio.netlify.app",
     },
-
+ {
+      title: "Chatiaa -a realtime chatapp like whatsapp|messenger",
+      url: "https://chatiaa.vercel.app",
+    },
     {
       title: "GitHub",
-      url: "https://github.com/Md-Asikur",
+      url: "https://github.com/awebcode",
     },
   ];
 
@@ -150,7 +153,7 @@ const PortfolioHeader = () => {
               <li>
                 <Link
                   className="text-gray-400"
-                  href="https://www.facebook.com/md.asikur.software.engineer/"
+                  href="https://www.facebook.com/awebcodee"
                 >
                   Facebook
                 </Link>
@@ -161,7 +164,7 @@ const PortfolioHeader = () => {
                 </Link>
                 <Link
                   className="text-gray-400"
-                  href="https://github.com/Md-Asikur-Rahman2"
+                  href="https://github.com/awebcode"
                 >
                   Github -Latest
                 </Link>
