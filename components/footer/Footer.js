@@ -66,13 +66,13 @@ const Footer = () => {
 
               <ul>
                 <li>
-                  <Link href="https://www.facebook.com/md.asikur.software.engineer/">Facebook</Link>
+                  <Link href="https://www.facebook.com/awebcodee/">Facebook</Link>
                 </li>
                 <li>
                   <Link href="https://github.com/Md-Asikur">Github -Previous</Link>
                 </li>
                 <li>
-                  <Link href="https://github.com/Md-Asikur-Rahman2">Github -Latest</Link>
+                  <Link href="https://github.com/awebcode">Github -Latest</Link>
                 </li>
                 <li>
                   <Link href="https://www.fiverr.com/designhill24">Fiverr</Link>
