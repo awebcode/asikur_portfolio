@@ -78,7 +78,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" type="image/png" href="/icon1.png" />
-
+<meta name="google-adsense-account" content="ca-pub-5613276644947970"/>
         <meta
           name="og:description"
           content="Welcome to the Asikur Portfolio Website: Where Creativity Meets Technology. Explore the dynamic world of Asikur, a fusion of personal portfolio and captivating blog. Discover stunning projects, insightful articles, and the talents of Asikur in web development, design, coding, and more. Immerse yourself in a digital experience that showcases the intersection of creativity and technology."
